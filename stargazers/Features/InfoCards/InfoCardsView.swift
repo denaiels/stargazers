@@ -15,6 +15,6 @@ struct InfoCardsView: View {
 
 struct InfoCardsView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoCardsView()
+        InfoCardsView().landscape()
     }
 }
