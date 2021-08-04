@@ -28,16 +28,30 @@ import Foundation
 //    }
 //}
 
-class Structure: Identifiable, ObservableObject{
-    @Published var id = UUID()
-    @Published var imageName: String?
-    @Published var titleName: String?
-    @Published var subTittle: String?
+//class Structure: Identifiable, ObservableObject{
+//    @Published var id = UUID()
+//    @Published var imageName: String?
+//    @Published var titleName: String?
+//    @Published var subTittle: String?
+//
+//    init(imageName: String, tittleName: String, subTittle: String) {
+//        self.imageName = imageName
+//        self.titleName = titleName
+//        self.subTittle = subTittle
+//    }
+//}
+
+class Structure: Identifiable{
+   var id = UUID()
+    var imageName: String?
+    var titleName: String?
+    var subTittle: String?
     
-    init(imageName: String, tittleName: String, subTittle: String) {
+    init(imageName: String, titleName: String, subTittle: String) {
         self.imageName = imageName
         self.titleName = titleName
         self.subTittle = subTittle
     }
 }
+
 

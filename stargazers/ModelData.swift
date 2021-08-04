@@ -9,15 +9,11 @@ import Foundation
 import Combine
 
 final class ModelData: ObservableObject {
-//    @Published var dashboards: [Structure]{
-//        [
-//        
-//        ]
-//    }
-    
-    @Published  var dashboards = {
-        Structure(imageName: "SolarEclipse", tittleName: "Gerhana Matahari", subTittle: "Solar Eclipse")
-    }
+    @Published  var dashboards = [
+        Structure(imageName: "MeteorShower", titleName: "Meteor Shower", subTittle: "Hujan Meteor"),
+        Structure(imageName: "SolarEclipse", titleName: "Solar Eclipse", subTittle: "Gerhana"),
+        Structure(imageName: "MeteorShower", titleName: "asdf", subTittle: "asdfd")
+    ]
     
     @Published var infoCards = [
     

@@ -7,9 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700F458826B8CD59001D1546 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700F458726B8CD59001D1546 /* File.swift */; };
 		701DA13726B89DF0007B84E7 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DA13626B89DF0007B84E7 /* ReusableView.swift */; };
 		707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A242E26B7F5A6000114B6 /* ViewLandscape.swift */; };
 		707A243326B7FFA8000114B6 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A243226B7FFA8000114B6 /* Structure.swift */; };
+		708BCCE026BA8C7B00B384A1 /* PlayAndStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708BCCDF26BA8C7B00B384A1 /* PlayAndStop.swift */; };
+		708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708BCCE126BA93B900B384A1 /* PlaySound.swift */; };
+		708BCCE426BA9D3C00B384A1 /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 708BCCE326BA9D3C00B384A1 /* A.mp3 */; };
+		70C2880026BAA9B1000DF909 /* perseids belt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F226BAA9B0000DF909 /* perseids belt@2x.png */; };
+		70C2880126BAA9B1000DF909 /* geminids belt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F326BAA9B0000DF909 /* geminids belt@2x.png */; };
+		70C2880226BAA9B1000DF909 /* geminids belt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F426BAA9B0000DF909 /* geminids belt@3x.png */; };
+		70C2880326BAA9B1000DF909 /* lyrids belt.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F526BAA9B0000DF909 /* lyrids belt.png */; };
+		70C2880426BAA9B1000DF909 /* HUD POV.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F626BAA9B0000DF909 /* HUD POV.png */; };
+		70C2880526BAA9B1000DF909 /* perseids belt.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F726BAA9B0000DF909 /* perseids belt.png */; };
+		70C2880626BAA9B1000DF909 /* frame bawah.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F826BAA9B0000DF909 /* frame bawah.png */; };
+		70C2880726BAA9B1000DF909 /* frame atas.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287F926BAA9B0000DF909 /* frame atas.png */; };
+		70C2880826BAA9B1000DF909 /* geminids belt.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287FA26BAA9B0000DF909 /* geminids belt.png */; };
+		70C2880926BAA9B1000DF909 /* lyrids belt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287FB26BAA9B0000DF909 /* lyrids belt@3x.png */; };
+		70C2880A26BAA9B1000DF909 /* lyrids belt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287FC26BAA9B1000DF909 /* lyrids belt@2x.png */; };
+		70C2880B26BAA9B1000DF909 /* perseids belt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287FD26BAA9B1000DF909 /* perseids belt@3x.png */; };
+		70C2880C26BAA9B1000DF909 /* HUD kiri bawah.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287FE26BAA9B1000DF909 /* HUD kiri bawah.png */; };
+		70C2880D26BAA9B1000DF909 /* HUD kanan bawah.png in Resources */ = {isa = PBXBuildFile; fileRef = 70C287FF26BAA9B1000DF909 /* HUD kanan bawah.png */; };
+		70CFD14726B95B0C0078E7A6 /* CGSizeFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */; };
 		A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */; };
 		A31EABA026A963F600BB04B7 /* modelData.json in Resources */ = {isa = PBXBuildFile; fileRef = A31EAB9F26A963F600BB04B7 /* modelData.json */; };
 		A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA126A9643600BB04B7 /* SimulationView.swift */; };
@@ -25,9 +44,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		700F458726B8CD59001D1546 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		701DA13626B89DF0007B84E7 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		707A242E26B7F5A6000114B6 /* ViewLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLandscape.swift; sourceTree = "<group>"; };
 		707A243226B7FFA8000114B6 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		708BCCDF26BA8C7B00B384A1 /* PlayAndStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAndStop.swift; sourceTree = "<group>"; };
+		708BCCE126BA93B900B384A1 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		708BCCE326BA9D3C00B384A1 /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A.mp3; sourceTree = "<group>"; };
+		70C287F226BAA9B0000DF909 /* perseids belt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perseids belt@2x.png"; sourceTree = "<group>"; };
+		70C287F326BAA9B0000DF909 /* geminids belt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geminids belt@2x.png"; sourceTree = "<group>"; };
+		70C287F426BAA9B0000DF909 /* geminids belt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geminids belt@3x.png"; sourceTree = "<group>"; };
+		70C287F526BAA9B0000DF909 /* lyrids belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyrids belt.png"; sourceTree = "<group>"; };
+		70C287F626BAA9B0000DF909 /* HUD POV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HUD POV.png"; sourceTree = "<group>"; };
+		70C287F726BAA9B0000DF909 /* perseids belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perseids belt.png"; sourceTree = "<group>"; };
+		70C287F826BAA9B0000DF909 /* frame bawah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame bawah.png"; sourceTree = "<group>"; };
+		70C287F926BAA9B0000DF909 /* frame atas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frame atas.png"; sourceTree = "<group>"; };
+		70C287FA26BAA9B0000DF909 /* geminids belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geminids belt.png"; sourceTree = "<group>"; };
+		70C287FB26BAA9B0000DF909 /* lyrids belt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyrids belt@3x.png"; sourceTree = "<group>"; };
+		70C287FC26BAA9B1000DF909 /* lyrids belt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lyrids belt@2x.png"; sourceTree = "<group>"; };
+		70C287FD26BAA9B1000DF909 /* perseids belt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perseids belt@3x.png"; sourceTree = "<group>"; };
+		70C287FE26BAA9B1000DF909 /* HUD kiri bawah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HUD kiri bawah.png"; sourceTree = "<group>"; };
+		70C287FF26BAA9B1000DF909 /* HUD kanan bawah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HUD kanan bawah.png"; sourceTree = "<group>"; };
+		70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeFrame.swift; sourceTree = "<group>"; };
 		A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		A31EAB9F26A963F600BB04B7 /* modelData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = modelData.json; sourceTree = "<group>"; };
 		A31EABA126A9643600BB04B7 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
@@ -59,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				707A243226B7FFA8000114B6 /* Structure.swift */,
+				708BCCDF26BA8C7B00B384A1 /* PlayAndStop.swift */,
+				708BCCE126BA93B900B384A1 /* PlaySound.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -75,6 +115,21 @@
 		A31EAB9926A9627A00BB04B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				70C287F926BAA9B0000DF909 /* frame atas.png */,
+				70C287F826BAA9B0000DF909 /* frame bawah.png */,
+				70C287FA26BAA9B0000DF909 /* geminids belt.png */,
+				70C287F326BAA9B0000DF909 /* geminids belt@2x.png */,
+				70C287F426BAA9B0000DF909 /* geminids belt@3x.png */,
+				70C287FF26BAA9B1000DF909 /* HUD kanan bawah.png */,
+				70C287FE26BAA9B1000DF909 /* HUD kiri bawah.png */,
+				70C287F626BAA9B0000DF909 /* HUD POV.png */,
+				70C287F526BAA9B0000DF909 /* lyrids belt.png */,
+				70C287FC26BAA9B1000DF909 /* lyrids belt@2x.png */,
+				70C287FB26BAA9B0000DF909 /* lyrids belt@3x.png */,
+				70C287F726BAA9B0000DF909 /* perseids belt.png */,
+				70C287F226BAA9B0000DF909 /* perseids belt@2x.png */,
+				70C287FD26BAA9B1000DF909 /* perseids belt@3x.png */,
+				708BCCE326BA9D3C00B384A1 /* A.mp3 */,
 				A31EAB9F26A963F600BB04B7 /* modelData.json */,
 			);
 			path = Resources;
@@ -86,6 +141,7 @@
 				A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */,
 				A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */,
 				707A242E26B7F5A6000114B6 /* ViewLandscape.swift */,
+				70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -163,6 +219,7 @@
 			children = (
 				A343F84126A95F3A00452CF6 /* stargazersApp.swift */,
 				A3295F2926B7F26B006A1C92 /* ModelData.swift */,
+				700F458726B8CD59001D1546 /* File.swift */,
 				A343F84326A95F3A00452CF6 /* ContentView.swift */,
 				A31EAB9B26A9629200BB04B7 /* Features */,
 				A31EAB9A26A9628900BB04B7 /* Utilities */,
@@ -239,8 +296,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C2880326BAA9B1000DF909 /* lyrids belt.png in Resources */,
+				70C2880426BAA9B1000DF909 /* HUD POV.png in Resources */,
+				70C2880526BAA9B1000DF909 /* perseids belt.png in Resources */,
+				70C2880826BAA9B1000DF909 /* geminids belt.png in Resources */,
+				708BCCE426BA9D3C00B384A1 /* A.mp3 in Resources */,
+				70C2880D26BAA9B1000DF909 /* HUD kanan bawah.png in Resources */,
 				A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */,
+				70C2880A26BAA9B1000DF909 /* lyrids belt@2x.png in Resources */,
+				70C2880926BAA9B1000DF909 /* lyrids belt@3x.png in Resources */,
+				70C2880B26BAA9B1000DF909 /* perseids belt@3x.png in Resources */,
 				A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */,
+				70C2880026BAA9B1000DF909 /* perseids belt@2x.png in Resources */,
+				70C2880226BAA9B1000DF909 /* geminids belt@3x.png in Resources */,
+				70C2880126BAA9B1000DF909 /* geminids belt@2x.png in Resources */,
+				70C2880726BAA9B1000DF909 /* frame atas.png in Resources */,
+				70C2880626BAA9B1000DF909 /* frame bawah.png in Resources */,
+				70C2880C26BAA9B1000DF909 /* HUD kiri bawah.png in Resources */,
 				A31EABA026A963F600BB04B7 /* modelData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,12 +328,16 @@
 				A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */,
 				A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */,
 				701DA13726B89DF0007B84E7 /* ReusableView.swift in Sources */,
+				70CFD14726B95B0C0078E7A6 /* CGSizeFrame.swift in Sources */,
 				A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */,
 				A3295F2226B7F1CF006A1C92 /* InfoCardsView.swift in Sources */,
 				A3295F2426B7F1E1006A1C92 /* DashboardView.swift in Sources */,
+				708BCCE026BA8C7B00B384A1 /* PlayAndStop.swift in Sources */,
+				708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */,
 				A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
 				707A243326B7FFA8000114B6 /* Structure.swift in Sources */,
+				700F458826B8CD59001D1546 /* File.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
 				A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */,
 			);

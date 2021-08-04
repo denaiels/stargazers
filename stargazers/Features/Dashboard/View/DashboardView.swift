@@ -2,13 +2,14 @@
 //  DashboardView.swift
 //  stargazers
 //
-//  Created by Fabio Sim on 02/08/21.
+//  Created by Dhika Aditya on 02/08/21.
 //
 
 import SwiftUI
+import AVFoundation
 
 struct DashboardView: View {
-    @EnvironmentObject var modelData: ModelData
+    //@EnvironmentObject var modelData: ModelData
     
     var body: some View {
         //HomeView(body: .environment(mode, /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.extraExtraLarge/*@END_MENU_TOKEN@*/))
@@ -20,23 +21,22 @@ struct DashboardView: View {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        //.environmentObject(ModelData())
-        
         Group {
             DashboardView()
                 .padding()
-                .frame(width: 2.36, height: 1.64)
+                //.frame(width: 2.36, height: 1.64)
                 .previewDevice("iPad Air (4th generation)")
                 .landscape()
             DashboardView()
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
                 .landscape()
             DashboardView()
-                .frame(width: 1.17, height: 2.532)
+                //.frame(width: 1.17, height: 2.532)
                 .previewDevice("iPhone 12")
                 .landscape()
-
+            
         }
+        .environmentObject(ModelData())
     }
     
 }
@@ -44,70 +44,82 @@ struct DashboardView_Previews: PreviewProvider {
 
 struct HomeView: View {
     @EnvironmentObject var modelData: ModelData
-    
+    @State var index = 0
+    @State var isCheck: Bool = false
     
     var body: some View {
         ZStack(){
-//            Image("nightspace-bg")
-//                .resizable()
-//                .aspectRatio(contentMode: .fit)
-//                .clipped()
-//                .foregroundColor(Color.white)
-            Rectangle()
-                .foregroundColor(.blue)
-                
-      /*
-            ZStack(){
-                VStack{
-                    HStack{
-                        Spacer()
-                        Text("Test")
-                            .foregroundColor(Color.white)
-                            .frame(width: 100, height: 100)
-                            .background(Color.green)
-                            .padding(.all, 10)
-                    }
-                    
-                    Spacer()
-                }
-            }
-            //MARK: Bagian ini
-            .frame(width: UIScreen.main.bounds.height, height: UIScreen.main.bounds.width)
- */
+            Image("nightspace-bg")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .clipped()
+                .foregroundColor(Color.white)
+            //            Rectangle()
+            //                .foregroundColor(.blue)
             
-            Button(action: {print()}){
+            /*
+             ZStack(){
+             VStack{
+             HStack{
+             Spacer()
+             Text("Test")
+             .foregroundColor(Color.white)
+             .frame(width: 100, height: 100)
+             .background(Color.green)
+             .padding(.all, 10)
+             }
+             
+             Spacer()
+             }
+             }
+             //MARK: Bagian ini
+             .frame(width: UIScreen.main.bounds.height, height: UIScreen.main.bounds.width)
+             */
+            
+            
+            
+            Button(action: {
+                isCheck = isCheck == false ? true : false
+                if isCheck == true{
+                    playSound(sound: "A", type: "mp3")
+                }else{
+                    stopSound(sound: "A", type: "mp3")
+                }
+                print(isCheck)
+                
+            }){
                 Image(systemName: "speaker.wave.3")
                     .foregroundColor(Color.white)
-                    .frame(width: 64, height: 64)
+                    //.frame(width: 64, height: 64)
                     .background(Color.green)
                     .padding(.all, 60)
-                    .frame(width: UIScreen.main.bounds.height, height: UIScreen.main.bounds.width, alignment: .topTrailing)//widthMax jika ingin lebih pojok
+                    .frame(width: UIScreen.main.bounds.size.landscape().width, height: UIScreen.main.bounds.size.landscape().height, alignment: .topTrailing)//widthMax jika ingin lebih pojok
             }
             
             //MARK: pakai spacing 8 untuk mengganti Spacer()
             HStack(){
                 //ZStack{
-                    Button(action: {print()}){
-                        Image(systemName: "chevron.left")
-                            .resizable()
-                            .foregroundColor(Color.orange)
-                            .frame(width: 32, height: 64)
-                            .padding(.leading)
-                    }
+                Button(action: {index = index > 0 ? index-1 : modelData.dashboards.count-1}){
+                    Image(systemName: "chevron.left")
+                        .resizable()
+                        .foregroundColor(Color.orange)
+                        .frame(width: 32, height: 64)
+                        .padding(.leading)
+                }
                 //}
                 
                 Spacer()
-                Spacer()
+                //Spacer()
                 
-                Image("SolarEclipse")
+                Image(modelData.dashboards[index].imageName ?? "error")
                     .resizable()
                     .frame(width: 400, height: 400) //MARK: Ukuran gambar harus di INISIALISASIIN Karena mempengaruhi spacingnya/spacer
                 
                 Spacer()
                 
                 VStack(){
-                    Text("Gerhana Matahari").font(.title).bold()
-                    Text("Solar Eclipse").font(.callout)
+                    Text(modelData.dashboards[index].titleName ?? "error").font(.title).bold()
+                    Text(modelData.dashboards[index].subTittle ?? "error").font(.callout)
                     Spacer()
                     Button(action: {print()}){
                         HStack{
@@ -124,15 +136,15 @@ struct HomeView: View {
                 .frame(width: 256, height: 128)
                 
                 Spacer()
-                Spacer()
+                //Spacer()
                 
                 //ZStack{
-                    Button(action: {print()}){
-                        Image(systemName: "chevron.right")
-                            .resizable()
-                            .foregroundColor(Color.orange)
-                            .frame(width: 32, height: 64)
-                    }
+                Button(action: {index = index >= modelData.dashboards.count-1 ? 0 : index+1}){
+                    Image(systemName: "chevron.right")
+                        .resizable()
+                        .foregroundColor(Color.orange)
+                        .frame(width: 32, height: 64)
+                }
                 //}
             }
             //MARK: Cek frame disini
@@ -143,5 +155,20 @@ struct HomeView: View {
         }
         .edgesIgnoringSafeArea(.all)
     }
+    
+    
+    //    var player: AVAudioPlayer!
+    //    func playSound() {
+    //        let url = Bundle.main.url(forResource: "A", withExtension: "Any")
+    //        player = try! AVAudioPlayer(contentsOf: url!)
+    //        player.play()
+    //
+    //    }
+    
+    
+    
+    
 }
+
+
 
