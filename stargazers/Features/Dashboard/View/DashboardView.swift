@@ -8,13 +8,8 @@
 import SwiftUI
 import AVFoundation
 
-struct DashboardView: View {
-    //@EnvironmentObject var modelData: ModelData
-    
+struct DashboardView: View {    
     var body: some View {
-        //HomeView(body: .environment(mode, /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.extraExtraLarge/*@END_MENU_TOKEN@*/))
-        //Text("Test")
-        //Text(modelData.$dashboards)
         HomeView()
     }
 }

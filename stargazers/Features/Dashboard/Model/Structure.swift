@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 //struct Structure: Identifiable{
 //    let id = UUID()
@@ -46,6 +47,13 @@ class Structure: Identifiable{
     var imageName: String?
     var titleName: String?
     var subTittle: String?
+    
+//    //MARK: Positioning Gesture Card
+//    var x: CGFloat = 0.0
+//    var y: CGFloat = 0.0
+//    //MARK: Rotation Angle
+//    var degree: Double = 0.0
+    
     
     init(imageName: String, titleName: String, subTittle: String) {
         self.imageName = imageName

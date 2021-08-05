@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "SolarEclipseUpdate.png",
+      "filename" : "geminids belt.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "geminids belt@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "geminids belt@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
