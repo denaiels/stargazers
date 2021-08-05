@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct InfoCardsView: View {
+    @State var selection = 0
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(){
+            Color.gray.ignoresSafeArea()
+            VStack{
+                HStack(){
+                    Spacer()
+                    Button(action: {print("Exit")}){
+                        Image(systemName: "xmark").foregroundColor(.white).font(.system(size: 50))
+                    }
+                }.frame(width:900)
+                PageTabView(selection: $selection)
+            }
+            
+        }
     }
 }
 
 struct InfoCardsView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoCardsView().landscape()
+        Group {
+            InfoCardsView().landscape()
+            InfoCardsView().previewDevice("iPad Pro (12.9-inch) (4th generation)").landscape()
+        }
     }
 }
