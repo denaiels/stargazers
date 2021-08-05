@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ViewLandscape: ViewModifier {
-    let height = UIScreen.main.bounds.width
-    let width = UIScreen.main.bounds.height
+    let height = UIScreen.main.bounds.size.landscape().height
+    let width = UIScreen.main.bounds.size.landscape().width
 
     var isPad: Bool {
         return height >= 768

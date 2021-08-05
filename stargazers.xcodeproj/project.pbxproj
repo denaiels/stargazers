@@ -16,10 +16,16 @@
 		A3295F2426B7F1E1006A1C92 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2326B7F1E1006A1C92 /* DashboardView.swift */; };
 		A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2726B7F22E006A1C92 /* HUDView.swift */; };
 		A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2926B7F26B006A1C92 /* ModelData.swift */; };
+		A3295F2C26B7FEEB006A1C92 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2B26B7FEEB006A1C92 /* Simulation.swift */; };
+		A3295F2F26B809E0006A1C92 /* Eclipse3DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2D26B809E0006A1C92 /* Eclipse3DScene.swift */; };
+		A3295F3026B809E0006A1C92 /* Eclipse2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2E26B809E0006A1C92 /* Eclipse2DScene.swift */; };
 		A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84126A95F3A00452CF6 /* stargazersApp.swift */; };
 		A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84326A95F3A00452CF6 /* ContentView.swift */; };
 		A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84526A95F3B00452CF6 /* Assets.xcassets */; };
 		A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */; };
+		A3E809DA26B8219200E31F7F /* MeteorShower2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809D926B8219200E31F7F /* MeteorShower2DScene.swift */; };
+		A3E809DC26B821A000E31F7F /* MeteorShower3DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809DB26B821A000E31F7F /* MeteorShower3DScene.swift */; };
+		A3E809DF26B8332F00E31F7F /* CGSize+Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +38,18 @@
 		A3295F2326B7F1E1006A1C92 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A3295F2726B7F22E006A1C92 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
 		A3295F2926B7F26B006A1C92 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		A3295F2B26B7FEEB006A1C92 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		A3295F2D26B809E0006A1C92 /* Eclipse3DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eclipse3DScene.swift; sourceTree = "<group>"; };
+		A3295F2E26B809E0006A1C92 /* Eclipse2DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eclipse2DScene.swift; sourceTree = "<group>"; };
 		A343F83E26A95F3A00452CF6 /* stargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A343F84126A95F3A00452CF6 /* stargazersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stargazersApp.swift; sourceTree = "<group>"; };
 		A343F84326A95F3A00452CF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A343F84526A95F3B00452CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A343F84A26A95F3B00452CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3E809D926B8219200E31F7F /* MeteorShower2DScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorShower2DScene.swift; sourceTree = "<group>"; };
+		A3E809DB26B821A000E31F7F /* MeteorShower3DScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorShower3DScene.swift; sourceTree = "<group>"; };
+		A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Landscape.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 				A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */,
 				A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */,
 				707A242E26B7F5A6000114B6 /* ViewLandscape.swift */,
+				A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -116,8 +129,20 @@
 			isa = PBXGroup;
 			children = (
 				A31EABA126A9643600BB04B7 /* SimulationView.swift */,
+				A3295F2B26B7FEEB006A1C92 /* Simulation.swift */,
+				A3295F3126B80A11006A1C92 /* Eclipse */,
+				A3E809DD26B821A600E31F7F /* MeteorShower */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		A3295F3126B80A11006A1C92 /* Eclipse */ = {
+			isa = PBXGroup;
+			children = (
+				A3295F2E26B809E0006A1C92 /* Eclipse2DScene.swift */,
+				A3295F2D26B809E0006A1C92 /* Eclipse3DScene.swift */,
+			);
+			path = Eclipse;
 			sourceTree = "<group>";
 		};
 		A343F83526A95F3A00452CF6 = {
@@ -158,6 +183,15 @@
 				A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3E809DD26B821A600E31F7F /* MeteorShower */ = {
+			isa = PBXGroup;
+			children = (
+				A3E809D926B8219200E31F7F /* MeteorShower2DScene.swift */,
+				A3E809DB26B821A000E31F7F /* MeteorShower3DScene.swift */,
+			);
+			path = MeteorShower;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,15 +265,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */,
+				A3295F2F26B809E0006A1C92 /* Eclipse3DScene.swift in Sources */,
 				A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */,
+				A3295F2C26B7FEEB006A1C92 /* Simulation.swift in Sources */,
 				A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */,
 				A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */,
 				A3295F2226B7F1CF006A1C92 /* InfoCardsView.swift in Sources */,
 				A3295F2426B7F1E1006A1C92 /* DashboardView.swift in Sources */,
+				A3E809DA26B8219200E31F7F /* MeteorShower2DScene.swift in Sources */,
 				A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */,
+				A3295F3026B809E0006A1C92 /* Eclipse2DScene.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
+				A3E809DF26B8332F00E31F7F /* CGSize+Landscape.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
 				A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */,
+				A3E809DC26B821A000E31F7F /* MeteorShower3DScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,5 +13,5 @@ final class ModelData: ObservableObject {
     
     @Published var infoCards = []
     
-    @Published var simulations = []
+    var simulations = [Simulation(phenomenon: .solarEclipse), Simulation(phenomenon: .meteorShower)]
 }
