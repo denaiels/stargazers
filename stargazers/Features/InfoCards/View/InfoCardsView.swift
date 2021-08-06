@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct InfoCardsView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State var selection = 0
     var body: some View {
         ZStack(){
@@ -15,7 +17,9 @@ struct InfoCardsView: View {
             VStack{
                 HStack(){
                     Spacer(minLength: 10)
-                    Button(action: {print("Exit")}){
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }){
                         Image(systemName: "xmark").foregroundColor(.white).font(.system(size: 50))
                     }
                 }.padding([.top,.trailing],80)
@@ -23,7 +27,8 @@ struct InfoCardsView: View {
                 Spacer()
             }
         }
-
+        .navigationBarBackButtonHidden(true)
+        
     }
 }
 
