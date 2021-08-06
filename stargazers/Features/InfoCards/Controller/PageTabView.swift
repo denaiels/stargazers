@@ -11,27 +11,39 @@ struct PageTabView: View {
     @Binding var selection: Int
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
-        VStack {
-            HStack(spacing: 300){
-                indicatorPage(selection: $selection)
-                Spacer()
-//                    .offset(x: -250, y: -70)
-                Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }){
-                    Image(systemName: "xmark").foregroundColor(.yellow).font(.system(size: 50))
+            VStack {
+                HStack {
+                    indicatorPage(selection: $selection)
+                        .padding(.top, 20)
+                        .padding(.leading, 50)
+                    Spacer()
                 }
-            }
+                
+                HStack {
+                    Spacer()
+                    //                    .offset(x: -250, y: -70)
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }){
+                        Image(systemName: "xmark").foregroundColor(.yellow).font(.system(size: 50))
+                    }
+                }
+                .padding()
+                .padding(.bottom, 100)
+                
+                
                 ZStack(){
-                        if(selection == 4){
-                            MissionCard()
-                            
-                        } else {
-                                DetailCards(index: selection)
-                        }
+                    if(selection == 4){
+                        MissionCard()
+                        
+                    } else {
+                        DetailCards(index: selection)
+                    }
                     ButtonChevronCard(selection: $selection)
                 }
-        }.frame(width: 800, height: 600)
+            }
+        
+        //        .frame(width: 800, height: 600)
     }
 }
 
@@ -61,7 +73,7 @@ struct ButtonChevronCard : View {
                 Button(action:{(selection == 4) ? selection = 4 : (selection += 1)}){
                     Image(systemName: "chevron.right").foregroundColor(Color(#colorLiteral(red: 0.9765589833, green: 0.5821846128, blue: 0, alpha: 1))).frame(width: 100, height: 100).font(.system(size: 100))
                 }
-
+                
             }
         }
     }

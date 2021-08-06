@@ -12,15 +12,17 @@ struct InfoCardsView: View {
     
     @State var selection = 0
     var body: some View {
-        ZStack(){
+        ZStack(alignment: .top){
             Color(#colorLiteral(red: 0.00527537521, green: 0.003872103523, blue: 0.1063141897, alpha: 1)).ignoresSafeArea()
             HUD()
             VStack{
-//                .padding([.top,.trailing],80)
+                //                .padding([.top,.trailing],80)
                 PageTabView(selection: $selection)
             }
-
-        }.navigationBarBackButtonHidden(true)
+            
+        }
+        .navigationBarHidden(true)
+        //        .navigationBarBackButtonHidden(true)
     }
 }
 
