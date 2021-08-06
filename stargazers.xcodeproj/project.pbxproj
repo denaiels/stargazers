@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701275F026BB735800CDF122 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701275EF26BB735800CDF122 /* Dashboard.swift */; };
+		704F893426BBE040007A232B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F893326BBE040007A232B /* HUD.swift */; };
+		704F893826BBE3BC007A232B /* ButtonChevron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F893726BBE3BC007A232B /* ButtonChevron.swift */; };
+		704F893B26BBE6A8007A232B /* DataOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F893A26BBE6A8007A232B /* DataOnly.swift */; };
+		704F893D26BBE932007A232B /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704F893C26BBE932007A232B /* DummyView.swift */; };
 		2B512FDD26BADE4C007EC5FC /* PageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B512FDC26BADE4C007EC5FC /* PageTabView.swift */; };
 		2B512FE026BADEAB007EC5FC /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B512FDF26BADEAB007EC5FC /* DummyData.swift */; };
 		2B512FE326BAE05A007EC5FC /* DetailCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B512FE226BAE05A007EC5FC /* DetailCards.swift */; };
 		2BCEAB2926BB77A4003FDBEC /* MissionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEAB2826BB77A4003FDBEC /* MissionCard.swift */; };
 		2BCEAB5726BBF225003FDBEC /* Tappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEAB5626BBF225003FDBEC /* Tappable.swift */; };
 		707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A242E26B7F5A6000114B6 /* ViewLandscape.swift */; };
+		707A243326B7FFA8000114B6 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A243226B7FFA8000114B6 /* Structure.swift */; };
+		708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708BCCE126BA93B900B384A1 /* PlaySound.swift */; };
+		708BCCE426BA9D3C00B384A1 /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 708BCCE326BA9D3C00B384A1 /* A.mp3 */; };
+		70CFD14726B95B0C0078E7A6 /* CGSizeFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */; };
 		A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */; };
-		A31EABA026A963F600BB04B7 /* modelData.json in Resources */ = {isa = PBXBuildFile; fileRef = A31EAB9F26A963F600BB04B7 /* modelData.json */; };
 		A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA126A9643600BB04B7 /* SimulationView.swift */; };
 		A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */; };
 		A3295F2226B7F1CF006A1C92 /* InfoCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */; };
-		A3295F2426B7F1E1006A1C92 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2326B7F1E1006A1C92 /* DashboardView.swift */; };
 		A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2726B7F22E006A1C92 /* HUDView.swift */; };
 		A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2926B7F26B006A1C92 /* ModelData.swift */; };
 		A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84126A95F3A00452CF6 /* stargazersApp.swift */; };
@@ -28,18 +35,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		701275EF26BB735800CDF122 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		704F893326BBE040007A232B /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		704F893726BBE3BC007A232B /* ButtonChevron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChevron.swift; sourceTree = "<group>"; };
+		704F893A26BBE6A8007A232B /* DataOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOnly.swift; sourceTree = "<group>"; };
+		704F893C26BBE932007A232B /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
 		2B512FDC26BADE4C007EC5FC /* PageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabView.swift; sourceTree = "<group>"; };
 		2B512FDF26BADEAB007EC5FC /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		2B512FE226BAE05A007EC5FC /* DetailCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCards.swift; sourceTree = "<group>"; };
 		2BCEAB2826BB77A4003FDBEC /* MissionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCard.swift; sourceTree = "<group>"; };
 		2BCEAB5626BBF225003FDBEC /* Tappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tappable.swift; sourceTree = "<group>"; };
 		707A242E26B7F5A6000114B6 /* ViewLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLandscape.swift; sourceTree = "<group>"; };
+		707A243226B7FFA8000114B6 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		708BCCE126BA93B900B384A1 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		708BCCE326BA9D3C00B384A1 /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A.mp3; sourceTree = "<group>"; };
+		70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeFrame.swift; sourceTree = "<group>"; };
 		A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
-		A31EAB9F26A963F600BB04B7 /* modelData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = modelData.json; sourceTree = "<group>"; };
 		A31EABA126A9643600BB04B7 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardsView.swift; sourceTree = "<group>"; };
-		A3295F2326B7F1E1006A1C92 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A3295F2726B7F22E006A1C92 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
 		A3295F2926B7F26B006A1C92 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A343F83E26A95F3A00452CF6 /* stargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		704F893926BBE629007A232B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				704F893A26BBE6A8007A232B /* DataOnly.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		707A243026B7FEC6000114B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				707A243226B7FFA8000114B6 /* Structure.swift */,
+				708BCCE126BA93B900B384A1 /* PlaySound.swift */,
 		2BF4E46226BD29FA008CCEC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +96,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		707A243126B7FECB000114B6 /* View */ = {
 		2BF4E46426BD2A04008CCEC2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				701275EF26BB735800CDF122 /* Dashboard.swift */,
+				704F893326BBE040007A232B /* HUD.swift */,
+				704F893726BBE3BC007A232B /* ButtonChevron.swift */,
+				704F893C26BBE932007A232B /* DummyView.swift */,
 				A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */,
 				2B512FE226BAE05A007EC5FC /* DetailCards.swift */,
 				2BCEAB2826BB77A4003FDBEC /* MissionCard.swift */,
@@ -90,7 +122,7 @@
 		A31EAB9926A9627A00BB04B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A31EAB9F26A963F600BB04B7 /* modelData.json */,
+				708BCCE326BA9D3C00B384A1 /* A.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -101,6 +133,7 @@
 				A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */,
 				A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */,
 				707A242E26B7F5A6000114B6 /* ViewLandscape.swift */,
+				70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -127,7 +160,9 @@
 		A3295F1F26B7F17C006A1C92 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				A3295F2326B7F1E1006A1C92 /* DashboardView.swift */,
+				704F893926BBE629007A232B /* Controller */,
+				707A243126B7FECB000114B6 /* View */,
+				707A243026B7FEC6000114B6 /* Model */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -256,9 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708BCCE426BA9D3C00B384A1 /* A.mp3 in Resources */,
 				A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */,
 				A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */,
-				A31EABA026A963F600BB04B7 /* modelData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,13 +308,21 @@
 				707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */,
 				2BCEAB2926BB77A4003FDBEC /* MissionCard.swift in Sources */,
 				A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */,
+				701275F026BB735800CDF122 /* Dashboard.swift in Sources */,
 				A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */,
+				704F893D26BBE932007A232B /* DummyView.swift in Sources */,
+				70CFD14726B95B0C0078E7A6 /* CGSizeFrame.swift in Sources */,
 				A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */,
 				A3295F2226B7F1CF006A1C92 /* InfoCardsView.swift in Sources */,
+				708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */,
 				2B512FE326BAE05A007EC5FC /* DetailCards.swift in Sources */,
 				A3295F2426B7F1E1006A1C92 /* DashboardView.swift in Sources */,
 				A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
+				704F893826BBE3BC007A232B /* ButtonChevron.swift in Sources */,
+				707A243326B7FFA8000114B6 /* Structure.swift in Sources */,
+				704F893B26BBE6A8007A232B /* DataOnly.swift in Sources */,
+				704F893426BBE040007A232B /* HUD.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
 				A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */,
 				2B512FDD26BADE4C007EC5FC /* PageTabView.swift in Sources */,
@@ -413,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"stargazers/Preview Content\"";
-				DEVELOPMENT_TEAM = 6C2BH8A6B8;
+				DEVELOPMENT_TEAM = W6NYRRRG5Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = stargazers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -435,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"stargazers/Preview Content\"";
-				DEVELOPMENT_TEAM = 6C2BH8A6B8;
+				DEVELOPMENT_TEAM = W6NYRRRG5Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = stargazers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
