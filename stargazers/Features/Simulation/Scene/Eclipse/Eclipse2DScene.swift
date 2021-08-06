@@ -166,7 +166,7 @@ class Eclipse2DScene: SKScene, HasListener {
         default:
             moonNode.fillColor = .gray
         }
-    }
+    }    
     
     //  MARK: - Touch Handlers
     

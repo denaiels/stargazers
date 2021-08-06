@@ -19,12 +19,6 @@ struct SimulationView: View {
                 .frame(width: UIScreen.main.bounds.size.landscape().width * 0.25,
                        height: UIScreen.main.bounds.size.landscape().height * 0.25)
                 .border(Color.white)
-            
-            Text(simulation.status)
-                .font(.title)
-                .foregroundColor(.blue)
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .topLeading)
         }
     }
 }

@@ -11,20 +11,20 @@ class Simulation: ObservableObject {
     
     //  MARK: - Properties
     
-    @Published var status = "Hello"
+    @Published private(set) var status = "Hello"
     
-    enum Phenomenon {
+    enum PhenomenonType {
         case solarEclipse
         case meteorShower
     }
-    let phenomenon: Phenomenon
+    let phenomenon: PhenomenonType
     
     let earthViewScene: SKScene & HasListener
     let solarSystemScene: SKScene & HasPublisher
     
     //  MARK: - Lifecycle Methods
     
-    init(phenomenon: Phenomenon) {
+    init(phenomenon: PhenomenonType) {
         self.phenomenon = phenomenon
         
         let size = UIScreen.main.bounds.size.landscape()

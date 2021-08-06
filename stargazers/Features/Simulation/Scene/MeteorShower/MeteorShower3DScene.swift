@@ -174,7 +174,7 @@ class MeteorShower3DScene: SKScene, HasPublisher {
             let pathPoint = getPathPoint(for: angle)
             node.position = pathPoint
             setAsteroidBelt(at: angle)
-//            simulation?.notifyEarthView(with: angle)
+            simulation?.notifyEarthView(with: angle)
             simulation?.notifyViewModel(with: getDateString(from: angle))
         }
     }
