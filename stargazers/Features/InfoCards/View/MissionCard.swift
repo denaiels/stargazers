@@ -17,10 +17,10 @@ struct MissionCard: View {
             }
             
             Button(action:{print("Play gae") }){
-                Image("start.button").resizable().frame(width:262,height:61).overlay(Text("Mulai Misi").foregroundColor(.white).font(.system(size: 32)))
+                Image("StartButton").resizable().frame(width:262,height:61).overlay(Text("Mulai Misi").foregroundColor(.white).font(.system(size: 32)))
             }.padding(.top,80)
             Spacer()
-        }
+        }.foregroundColor(.white)
     }
 }
 

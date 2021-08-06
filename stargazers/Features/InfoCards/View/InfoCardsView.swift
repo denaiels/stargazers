@@ -13,22 +13,14 @@ struct InfoCardsView: View {
     @State var selection = 0
     var body: some View {
         ZStack(){
-            Color.gray.ignoresSafeArea()
+            Color(#colorLiteral(red: 0.00527537521, green: 0.003872103523, blue: 0.1063141897, alpha: 1)).ignoresSafeArea()
+            HUD()
             VStack{
-                HStack(){
-                    Spacer(minLength: 10)
-                    Button(action: {
-                        presentationMode.wrappedValue.dismiss()
-                    }){
-                        Image(systemName: "xmark").foregroundColor(.white).font(.system(size: 50))
-                    }
-                }.padding([.top,.trailing],80)
+//                .padding([.top,.trailing],80)
                 PageTabView(selection: $selection)
-                Spacer()
             }
-        }
-        .navigationBarBackButtonHidden(true)
-        
+
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

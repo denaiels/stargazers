@@ -22,7 +22,7 @@ struct DetailCards: View {
 //                }
 //            }
             Text(inserted[index].text)
-        }.frame(width:800,alignment: .leading)
+        }.frame(width:800,alignment: .leading).foregroundColor(.white)
     }
     
     private func generateBlock(for str: Substring) -> some View {
