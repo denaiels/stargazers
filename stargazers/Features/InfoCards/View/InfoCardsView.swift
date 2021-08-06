@@ -14,15 +14,16 @@ struct InfoCardsView: View {
             Color.gray.ignoresSafeArea()
             VStack{
                 HStack(){
-                    Spacer()
+                    Spacer(minLength: 10)
                     Button(action: {print("Exit")}){
                         Image(systemName: "xmark").foregroundColor(.white).font(.system(size: 50))
                     }
-                }.frame(width:900)
+                }.padding([.top,.trailing],80)
                 PageTabView(selection: $selection)
+                Spacer()
             }
-            
         }
+
     }
 }
 
