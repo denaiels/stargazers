@@ -14,70 +14,39 @@ struct Dashboard: View {
     @State var isCheck: Bool = false
     var body: some View {
         ZStack{
-            Rectangle()
-                .foregroundColor(Color.black)
-            
-            
-            ZStack{
-                VStack(){
-                    Image("frame atas")
-                    Spacer()
-                    Image("frame bawah")
-                }
+            Image("background")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .clipped()
+                .foregroundColor(Color.white)
                 .frame(width: UIScreen.main.bounds.size.landscape().width, height: UIScreen.main.bounds.size.landscape().height)
-            }
             
-            ZStack{
-                VStack{
-                    HStack(){
-//                        Text("CakrawaLab Version 1.0")
-//                            .foregroundColor(.white)
-                        Button(action: {
-                            isCheck = isCheck == false ? true : false
-                            if isCheck == true{
-                                playSound(sound: "A", type: "mp3")
-                            }else{
-                                stopSound(sound: "A", type: "mp3")
-                            }
-                        }){
-                            //Spacer()
-                            Image(systemName: "speaker.wave.3")
-                                .foregroundColor(Color.orange)
-                                .padding(.all, 60)
-                                //MARK: Bug here
-                                //.frame(width: UIScreen.main.bounds.size.landscape().width, height: UIScreen.main.bounds.size.landscape().height, alignment: .topTrailing)
-                                .frame(width: 100, height: 100, alignment: .topTrailing)
-                        }
-                        
-                        .frame(width: UIScreen.main.bounds.size.landscape().width, height: UIScreen.main.bounds.size.landscape().height, alignment: .topTrailing)
-                    }
-                    Spacer()
-                }
-                
-
-                
-            }
+            HUD()
             
+            ButtonSound(flagCheck: $isCheck)
+            
+            ButtonChevron(idx: $currIndex)
+            
+          
             ZStack{
-                HStack(spacing: 900){
-                    Button(action: {currIndex = currIndex > 0 ? currIndex-1 : modelData.dashboards.count-1}){
-                        Image(systemName: "chevron.left")
-                            .resizable()
-                            .foregroundColor(Color.orange)
-                            .frame(width: 32, height: 64)
-                            .padding(.leading)
-                    }
+                VStack(spacing: 32){
+                    DataOnly(currIndex: $currIndex)
                     
-                    Button(action: {currIndex = currIndex >= modelData.dashboards.count-1 ? 0 : currIndex+1}){
-                        Image(systemName: "chevron.right")
+                    //MARK: Navigation View
+                    ZStack {
+                        Image("StartButton3x")
                             .resizable()
-                            .foregroundColor(Color.orange)
-                            .frame(width: 32, height: 64)
+                            .frame(width: 200, height: 60)
+                        NavigationLink(destination: DummyView()) {
+                            Text("Mulai Misi")
+                                .font(.system(size: 16, design: .monospaced))
+                                .fontWeight(.light)
+                                .foregroundColor(.white)
+                                .foregroundColor(Color.white)
+                        }
                     }
                 }
             }
-            
-            DataOnly(currIndex: $currIndex)
         }
     }
 }
@@ -99,61 +68,33 @@ struct Dashboard_Previews: PreviewProvider {
     }
 }
 
-struct DataOnly: View {
+
+struct ButtonSound: View {
     @EnvironmentObject var modelData: ModelData
-    @Binding var currIndex: Int
-    @State var xPosition: CGFloat = 0.0
-    @State var yPosition: CGFloat = 0.0
-    @State var degreePosition: Double = 0.0
+    @Binding var flagCheck: Bool
+    
     var body: some View {
         ZStack{
-            VStack(){
-                Image(modelData.dashboards[currIndex].imageName ?? "No Image")
-                Text(modelData.dashboards[currIndex].titleName ?? "No Title").font(.title).bold()
-                Text(modelData.dashboards[currIndex].subTittle ?? "No SubTitle").font(.callout)
-            }
-            .foregroundColor(Color.white)
-        }
-        .offset(x: xPosition, y: yPosition)
-        .rotationEffect(.init(degrees: degreePosition))
-        .gesture(
-            DragGesture()
-                .onChanged{ value in
-                    withAnimation(.default){
-                        xPosition = value.translation.width
-                        yPosition = value.translation.height
-                        degreePosition = 8 * (value.translation.width > 0 ? 1 : -1)
-                        print("")
-                        print(degreePosition)
-                        print(xPosition)
-                        print(yPosition)
-                        print("")
-                    }
-                }
-                
-                .onEnded(){ value in
-                    withAnimation(.interpolatingSpring(mass: 1.0, stiffness: 50, damping: 8, initialVelocity: 0)) {
-                        switch value.translation.width {
-                        case 0...100:
-                            xPosition = 0; degreePosition = 0; yPosition = 0
-                        case let x where x > 260:
-                            //yPosition = 500; degreePosition = 12
-                            xPosition = 0; degreePosition = 0; yPosition = 0
-                            currIndex = currIndex > 0 ? currIndex-1 : modelData.dashboards.count-1
-                            print("x lebih besar dari 100")
-                        case (-100)...(-1):
-                            //xPosition = 0; degreePosition = 0; yPosition = 0
-                            print("balikin ke 0")
-                        case let x where x < -215:
-                            //xPosition  = -500; degreePosition = -12
-                            xPosition = 0; degreePosition = 0; yPosition = 0
-                            currIndex = currIndex >= modelData.dashboards.count-1 ? 0 : currIndex+1
-                            print("posisi minus nih")
-                        default:
-                            xPosition = 0; yPosition = 0
+            VStack{
+                HStack(){
+                    Button(action: {
+                        flagCheck = flagCheck == false ? true : false
+                        if flagCheck == true{
+                            playSound(sound: "A", type: "mp3")
+                        }else{
+                            stopSound(sound: "A", type: "mp3")
                         }
+                    }){
+                        Image(systemName: "speaker.wave.3")
+                            .resizable()
+                            .foregroundColor(Color.orange)
+                            .frame(width: 32, height: 32)
+                            .padding(.all, 32)
                     }
+                    .frame(width: UIScreen.main.bounds.size.landscape().width, height: UIScreen.main.bounds.size.landscape().height, alignment: .topTrailing)
                 }
-        )
+                Spacer()
+            }
+        }
     }
 }
