@@ -174,7 +174,8 @@
 		A3295F2526B7F1EA006A1C92 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
-				A3295F2726B7F22E006A1C92 /* HUDView.swift */,
+				5FB3EDF526BBE57400D2D714 /* Views */,
+				5FB3EDF426BBE56900D2D714 /* Model */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -209,6 +210,7 @@
 			children = (
 				A343F84126A95F3A00452CF6 /* stargazersApp.swift */,
 				A3295F2926B7F26B006A1C92 /* ModelData.swift */,
+				5FB3EDF126BBDF9500D2D714 /* Phenomenon.swift */,
 				A343F84326A95F3A00452CF6 /* ContentView.swift */,
 				A31EAB9B26A9629200BB04B7 /* Features */,
 				A31EAB9A26A9628900BB04B7 /* Utilities */,
@@ -325,6 +327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */,
+				5FB3EDE726BBB4A700D2D714 /* ObjectivesHUD.swift in Sources */,
+				5FB3EDED26BBBBB400D2D714 /* ObjectiveRow.swift in Sources */,
+				5F0217C126BC0AE300156691 /* TopBottomHUD.swift in Sources */,
+				5FDF7B0126BD22D400A4F8A1 /* CGSize+Landscape.swift in Sources */,
 				A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */,
 				701275F026BB735800CDF122 /* Dashboard.swift in Sources */,
 				A3D6420C26BD4AC000460379 /* DummyData.swift in Sources */,
@@ -346,6 +352,9 @@
 				704F893426BBE040007A232B /* HUD.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
 				A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */,
+				5FE6BB7326BEAD9A004CF592 /* AppColors.swift in Sources */,
+				5FB3EDEB26BBB52700D2D714 /* InfoPanel.swift in Sources */,
+				5FB3EDE526BBB49600D2D714 /* StatusHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
