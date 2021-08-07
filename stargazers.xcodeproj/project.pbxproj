@@ -20,13 +20,18 @@
 		A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */; };
 		A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA126A9643600BB04B7 /* SimulationView.swift */; };
 		A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */; };
-		A3295F2226B7F1CF006A1C92 /* InfoCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */; };
 		A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2726B7F22E006A1C92 /* HUDView.swift */; };
 		A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2926B7F26B006A1C92 /* ModelData.swift */; };
 		A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84126A95F3A00452CF6 /* stargazersApp.swift */; };
 		A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84326A95F3A00452CF6 /* ContentView.swift */; };
 		A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84526A95F3B00452CF6 /* Assets.xcassets */; };
 		A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */; };
+		A3D6420926BD4AC000460379 /* DetailCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420326BD4ABF00460379 /* DetailCards.swift */; };
+		A3D6420B26BD4AC000460379 /* MissionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420526BD4ABF00460379 /* MissionCard.swift */; };
+		A3D6420C26BD4AC000460379 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420726BD4ABF00460379 /* DummyData.swift */; };
+		A3D6420D26BD4AC000460379 /* Tappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420826BD4AC000460379 /* Tappable.swift */; };
+		A3D6420F26BD4ACD00460379 /* PageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420E26BD4ACD00460379 /* PageTabView.swift */; };
+		A3D6421126BD4B8900460379 /* InfoCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6421026BD4B8900460379 /* InfoCardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,12 @@
 		A343F84526A95F3B00452CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A343F84A26A95F3B00452CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D6420326BD4ABF00460379 /* DetailCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCards.swift; sourceTree = "<group>"; };
+		A3D6420526BD4ABF00460379 /* MissionCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionCard.swift; sourceTree = "<group>"; };
+		A3D6420726BD4ABF00460379 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		A3D6420826BD4AC000460379 /* Tappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tappable.swift; sourceTree = "<group>"; };
+		A3D6420E26BD4ACD00460379 /* PageTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTabView.swift; sourceTree = "<group>"; };
+		A3D6421026BD4B8900460379 /* InfoCardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BF4E46626BD2A19008CCEC2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3D6420E26BD4ACD00460379 /* PageTabView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		704F893926BBE629007A232B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +163,10 @@
 		A3295F2026B7F184006A1C92 /* InfoCards */ = {
 			isa = PBXGroup;
 			children = (
-				A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */,
+				A3D6420626BD4ABF00460379 /* Model */,
+				A3D6420826BD4AC000460379 /* Tappable.swift */,
+				A3D6420226BD4ABF00460379 /* View */,
+				2BF4E46626BD2A19008CCEC2 /* Controller */,
 			);
 			path = InfoCards;
 			sourceTree = "<group>";
@@ -170,6 +192,7 @@
 			children = (
 				A343F84026A95F3A00452CF6 /* stargazers */,
 				A343F83F26A95F3A00452CF6 /* Products */,
+				A3D6420126BD4AA800460379 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +226,32 @@
 				A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3D6420126BD4AA800460379 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A3D6420226BD4ABF00460379 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3D6421026BD4B8900460379 /* InfoCardsView.swift */,
+				A3D6420326BD4ABF00460379 /* DetailCards.swift */,
+				A3D6420526BD4ABF00460379 /* MissionCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3D6420626BD4ABF00460379 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3D6420726BD4ABF00460379 /* DummyData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,15 +327,20 @@
 				707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */,
 				A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */,
 				701275F026BB735800CDF122 /* Dashboard.swift in Sources */,
+				A3D6420C26BD4AC000460379 /* DummyData.swift in Sources */,
 				A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */,
 				704F893D26BBE932007A232B /* DummyView.swift in Sources */,
+				A3D6421126BD4B8900460379 /* InfoCardsView.swift in Sources */,
 				70CFD14726B95B0C0078E7A6 /* CGSizeFrame.swift in Sources */,
 				A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */,
-				A3295F2226B7F1CF006A1C92 /* InfoCardsView.swift in Sources */,
+				A3D6420D26BD4AC000460379 /* Tappable.swift in Sources */,
 				708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */,
 				A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */,
+				A3D6420F26BD4ACD00460379 /* PageTabView.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
 				704F893826BBE3BC007A232B /* ButtonChevron.swift in Sources */,
+				A3D6420B26BD4AC000460379 /* MissionCard.swift in Sources */,
+				A3D6420926BD4AC000460379 /* DetailCards.swift in Sources */,
 				707A243326B7FFA8000114B6 /* Structure.swift in Sources */,
 				704F893B26BBE6A8007A232B /* DataOnly.swift in Sources */,
 				704F893426BBE040007A232B /* HUD.swift in Sources */,

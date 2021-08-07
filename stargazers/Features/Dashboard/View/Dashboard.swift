@@ -37,7 +37,7 @@ struct Dashboard: View {
                         Image("StartButton3x")
                             .resizable()
                             .frame(width: 200, height: 60)
-                        NavigationLink(destination: DummyView()) {
+                        NavigationLink(destination: InfoCardsView()) {
                             Text("Mulai Misi")
                                 .font(.system(size: 16, design: .monospaced))
                                 .fontWeight(.light)
