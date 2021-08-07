@@ -174,8 +174,14 @@ class MeteorShower3DScene: SKScene, HasPublisher {
             let pathPoint = getPathPoint(for: angle)
             node.position = pathPoint
             setAsteroidBelt(at: angle)
+            
+            let date = getDate(from: angle)
             simulation?.notifyEarthView(with: angle)
-            simulation?.notifyViewModel(with: getDateString(from: angle))
+            simulation?.notifyViewModelDate(with: getDateString(from: angle))
+            simulation?.notifyViewModelPhenomenonName(with: getPhenomenonName(from: date))
+            if let index = getIndex(from: date) {
+                simulation?.notifyViewModelObjectives(with: index)
+            }
         }
     }
     
@@ -241,6 +247,32 @@ extension MeteorShower3DScene {
         dateFormatter.dateFormat = "dd MMMM"
                 
         return dateFormatter.string(from: date)
+    }
+    
+    func getPhenomenonName(from date: Date) -> String {
+        switch date {
+        case lyrids:
+            return "Lyrids"
+        case perseids:
+            return "Perseids"
+        case geminids:
+            return "Geminids"
+        default:
+            return "-"
+        }
+    }
+    
+    func getIndex(from date: Date) -> Int? {
+        switch date {
+        case lyrids:
+            return 0
+        case perseids:
+            return 1
+        case geminids:
+            return 2
+        default:
+            return nil
+        }
     }
 }
 

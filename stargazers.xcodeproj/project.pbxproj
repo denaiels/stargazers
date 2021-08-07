@@ -20,13 +20,16 @@
 		A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA126A9643600BB04B7 /* SimulationView.swift */; };
 		A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */; };
 		A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2926B7F26B006A1C92 /* ModelData.swift */; };
-		A3295F2C26B7FEEB006A1C92 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2B26B7FEEB006A1C92 /* Simulation.swift */; };
 		A3295F2F26B809E0006A1C92 /* Eclipse3DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2D26B809E0006A1C92 /* Eclipse3DScene.swift */; };
-		A3295F3026B809E0006A1C92 /* Eclipse2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2E26B809E0006A1C92 /* Eclipse2DScene.swift */; };
 		A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84126A95F3A00452CF6 /* stargazersApp.swift */; };
 		A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84326A95F3A00452CF6 /* ContentView.swift */; };
 		A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84526A95F3B00452CF6 /* Assets.xcassets */; };
 		A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */; };
+		A39B490426BEC410008D240C /* MeteorShower3DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B490226BEC40F008D240C /* MeteorShower3DScene.swift */; };
+		A39B490526BEC410008D240C /* MeteorShower2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39B490326BEC410008D240C /* MeteorShower2DScene.swift */; };
+		A39B490A26BEC41F008D240C /* Perseids.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A39B490726BEC41F008D240C /* Perseids.mp4 */; };
+		A39B490B26BEC41F008D240C /* Geminids.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A39B490826BEC41F008D240C /* Geminids.mp4 */; };
+		A39B490C26BEC41F008D240C /* Lyrids.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A39B490926BEC41F008D240C /* Lyrids.mp4 */; };
 		A3B5711526BEBB4D00F10B57 /* ModelDataHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5710A26BEBB4D00F10B57 /* ModelDataHUD.swift */; };
 		A3B5711726BEBB4D00F10B57 /* CompletedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5710E26BEBB4D00F10B57 /* CompletedStatus.swift */; };
 		A3B5711826BEBB4D00F10B57 /* ObjectiveRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5710F26BEBB4D00F10B57 /* ObjectiveRow.swift */; };
@@ -39,6 +42,8 @@
 		A3B5712126BEBB7600F10B57 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711F26BEBB7600F10B57 /* AppColors.swift */; };
 		A3B5712326BEBBAA00F10B57 /* Phenomenon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5712226BEBBAA00F10B57 /* Phenomenon.swift */; };
 		A3B5712526BEBC0C00F10B57 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5712426BEBC0C00F10B57 /* HUDView.swift */; };
+		A3CC3D5F26BEC48D00C34AF8 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC3D5E26BEC48D00C34AF8 /* Simulation.swift */; };
+		A3CC3D6126BEC4A500C34AF8 /* Eclipse2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC3D6026BEC4A500C34AF8 /* Eclipse2DScene.swift */; };
 		A3D6420926BD4AC000460379 /* DetailCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420326BD4ABF00460379 /* DetailCards.swift */; };
 		A3D6420B26BD4AC000460379 /* MissionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420526BD4ABF00460379 /* MissionCard.swift */; };
 		A3D6420C26BD4AC000460379 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420726BD4ABF00460379 /* DummyData.swift */; };
@@ -63,15 +68,18 @@
 		A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardsView.swift; sourceTree = "<group>"; };
 		A3295F2726B7F22E006A1C92 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
 		A3295F2926B7F26B006A1C92 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		A3295F2B26B7FEEB006A1C92 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		A3295F2D26B809E0006A1C92 /* Eclipse3DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eclipse3DScene.swift; sourceTree = "<group>"; };
-		A3295F2E26B809E0006A1C92 /* Eclipse2DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eclipse2DScene.swift; sourceTree = "<group>"; };
 		A343F83E26A95F3A00452CF6 /* stargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A343F84126A95F3A00452CF6 /* stargazersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stargazersApp.swift; sourceTree = "<group>"; };
 		A343F84326A95F3A00452CF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A343F84526A95F3B00452CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A343F84A26A95F3B00452CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39B490226BEC40F008D240C /* MeteorShower3DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteorShower3DScene.swift; sourceTree = "<group>"; };
+		A39B490326BEC410008D240C /* MeteorShower2DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteorShower2DScene.swift; sourceTree = "<group>"; };
+		A39B490726BEC41F008D240C /* Perseids.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Perseids.mp4; sourceTree = "<group>"; };
+		A39B490826BEC41F008D240C /* Geminids.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Geminids.mp4; sourceTree = "<group>"; };
+		A39B490926BEC41F008D240C /* Lyrids.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lyrids.mp4; sourceTree = "<group>"; };
 		A3B5710A26BEBB4D00F10B57 /* ModelDataHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHUD.swift; sourceTree = "<group>"; };
 		A3B5710E26BEBB4D00F10B57 /* CompletedStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedStatus.swift; sourceTree = "<group>"; };
 		A3B5710F26BEBB4D00F10B57 /* ObjectiveRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectiveRow.swift; sourceTree = "<group>"; };
@@ -84,6 +92,8 @@
 		A3B5711F26BEBB7600F10B57 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		A3B5712226BEBBAA00F10B57 /* Phenomenon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phenomenon.swift; sourceTree = "<group>"; };
 		A3B5712426BEBC0C00F10B57 /* HUDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		A3CC3D5E26BEC48D00C34AF8 /* Simulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		A3CC3D6026BEC4A500C34AF8 /* Eclipse2DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eclipse2DScene.swift; sourceTree = "<group>"; };
 		A3D6420326BD4ABF00460379 /* DetailCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCards.swift; sourceTree = "<group>"; };
 		A3D6420526BD4ABF00460379 /* MissionCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionCard.swift; sourceTree = "<group>"; };
 		A3D6420726BD4ABF00460379 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 		A31EAB9926A9627A00BB04B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A39B490626BEC41F008D240C /* Videos */,
 				708BCCE326BA9D3C00B384A1 /* A.mp3 */,
 			);
 			path = Resources;
@@ -155,7 +166,6 @@
 				A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */,
 				A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */,
 				707A242E26B7F5A6000114B6 /* ViewLandscape.swift */,
-				A3E809DE26B8332F00E31F7F /* CGSizeLandscape2.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -213,9 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				A31EABA126A9643600BB04B7 /* SimulationView.swift */,
-				A3295F2B26B7FEEB006A1C92 /* Simulation.swift */,
+				A3CC3D5E26BEC48D00C34AF8 /* Simulation.swift */,
 				A3295F3126B80A11006A1C92 /* Eclipse */,
-				A3E809DD26B821A600E31F7F /* MeteorShower */,
+				A39B490126BEC40F008D240C /* MeteorShower */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -223,7 +233,7 @@
 		A3295F3126B80A11006A1C92 /* Eclipse */ = {
 			isa = PBXGroup;
 			children = (
-				A3295F2E26B809E0006A1C92 /* Eclipse2DScene.swift */,
+				A3CC3D6026BEC4A500C34AF8 /* Eclipse2DScene.swift */,
 				A3295F2D26B809E0006A1C92 /* Eclipse3DScene.swift */,
 			);
 			path = Eclipse;
@@ -268,6 +278,25 @@
 				A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A39B490126BEC40F008D240C /* MeteorShower */ = {
+			isa = PBXGroup;
+			children = (
+				A39B490326BEC410008D240C /* MeteorShower2DScene.swift */,
+				A39B490226BEC40F008D240C /* MeteorShower3DScene.swift */,
+			);
+			path = MeteorShower;
+			sourceTree = "<group>";
+		};
+		A39B490626BEC41F008D240C /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				A39B490726BEC41F008D240C /* Perseids.mp4 */,
+				A39B490826BEC41F008D240C /* Geminids.mp4 */,
+				A39B490926BEC41F008D240C /* Lyrids.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		A3B5710926BEBB4D00F10B57 /* Model */ = {
@@ -388,11 +417,10 @@
 			files = (
 				708BCCE426BA9D3C00B384A1 /* A.mp3 in Resources */,
 				A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */,
+				A39B490C26BEC41F008D240C /* Lyrids.mp4 in Resources */,
+				A39B490A26BEC41F008D240C /* Perseids.mp4 in Resources */,
 				A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */,
-				A3D641FF26BD32B300460379 /* Lyrids.mp4 in Resources */,
-				A3D641FB26BD2E2300460379 /* Perseids.mp4 in Resources */,
-				A3D641FE26BD32B300460379 /* Geminids.mp4 in Resources */,
-				A39B490026BEC2A7008D240C /* modelData.json in Resources */,
+				A39B490B26BEC41F008D240C /* Geminids.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +436,7 @@
 				A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */,
 				701275F026BB735800CDF122 /* Dashboard.swift in Sources */,
 				A3B5711726BEBB4D00F10B57 /* CompletedStatus.swift in Sources */,
+				A3CC3D6126BEC4A500C34AF8 /* Eclipse2DScene.swift in Sources */,
 				A3B5712526BEBC0C00F10B57 /* HUDView.swift in Sources */,
 				A3B5711826BEBB4D00F10B57 /* ObjectiveRow.swift in Sources */,
 				A3B5711526BEBB4D00F10B57 /* ModelDataHUD.swift in Sources */,
@@ -418,12 +447,15 @@
 				A3D6421126BD4B8900460379 /* InfoCardsView.swift in Sources */,
 				A3B5712026BEBB7600F10B57 /* CGSizeLandscape.swift in Sources */,
 				A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */,
+				A39B490526BEC410008D240C /* MeteorShower2DScene.swift in Sources */,
+				A3CC3D5F26BEC48D00C34AF8 /* Simulation.swift in Sources */,
 				A3D6420D26BD4AC000460379 /* Tappable.swift in Sources */,
 				A3B5712126BEBB7600F10B57 /* AppColors.swift in Sources */,
 				708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */,
 				A3B5711B26BEBB4D00F10B57 /* TopBottomHUD.swift in Sources */,
 				A3D6420F26BD4ACD00460379 /* PageTabView.swift in Sources */,
 				A3B5711A26BEBB4D00F10B57 /* ViewFromEarthHUD.swift in Sources */,
+				A39B490426BEC410008D240C /* MeteorShower3DScene.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
 				704F893826BBE3BC007A232B /* ButtonChevron.swift in Sources */,
 				A3D6420B26BD4AC000460379 /* MissionCard.swift in Sources */,
@@ -436,7 +468,6 @@
 				704F893426BBE040007A232B /* HUD.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
 				A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */,
-				A3E809DC26B821A000E31F7F /* MeteorShower3DScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = stargazers.Cakrawalab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -599,7 +630,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = stargazers.Cakrawalab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

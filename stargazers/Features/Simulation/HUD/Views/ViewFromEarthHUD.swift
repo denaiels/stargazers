@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct ViewFromEarthHUD: View {
+    
+    @ObservedObject var simulation: Simulation
     
     // MARK: - Dynamic Sizes
     let imageWidth = UIScreen.main.bounds.size.landscape().width * 0.3484 // 476
@@ -18,13 +21,20 @@ struct ViewFromEarthHUD: View {
     // MARK: - Views
     var body: some View {
         ZStack(alignment: .topTrailing) {
+            SpriteView(scene: simulation.earthViewScene)
+                .frame(width: UIScreen.main.bounds.size.landscape().width * 0.27,
+                       height: UIScreen.main.bounds.size.landscape().height * 0.2)
+            
             Image("HUD POV transparan")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 
-            Button(action: {
-                // fullscreen action
-            }) {
+            NavigationLink(destination:
+                            SpriteView(scene: simulation.earthViewScene)
+                            .statusBar(hidden: true)
+                            .edgesIgnoringSafeArea(.vertical)
+//                            .navigationBarHidden(true)
+            ) {
                 Image(systemName: "arrow.up.left.and.arrow.down.right")
                     .font(Font.system(size: fsBtnSize, weight: .light))
                     .padding(.trailing, fsBtnTrailingPadding)
@@ -40,12 +50,12 @@ struct ViewFromEarthHUD: View {
 struct ViewFromEarthHUD_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ViewFromEarthHUD()
+            ViewFromEarthHUD(simulation: Simulation(phenomenon: .solarEclipse))
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
                 .landscape()
-            ViewFromEarthHUD()
-                .previewDevice("iPad Air (4th generation)")
-                .landscape()
+//            ViewFromEarthHUD()
+//                .previewDevice("iPad Air (4th generation)")
+//                .landscape()
         }
     }
 }

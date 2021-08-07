@@ -11,13 +11,20 @@ class Simulation: ObservableObject {
     
     //  MARK: - Properties
     
-    @Published private(set) var status = "Hello"
+    @Published private(set) var status = "01 January"
+    @Published private(set) var phenomenonName = "-"
+    
+    @Published var phenomena = [Phenomenon(id: 1, name: "Lyrids", isDone: false),
+                                             Phenomenon(id: 2, name: "Perseids", isDone: false),
+                                             Phenomenon(id: 3, name: "Geminids", isDone: false)
+    ]
+//    @Published private(set) var phenomenon: Phenomenon = Phenomenon(id: 0, name: "-", isDone: false)
     
     enum PhenomenonType {
         case solarEclipse
         case meteorShower
     }
-    let phenomenon: PhenomenonType
+    let phenomenonType: PhenomenonType
     
     let earthViewScene: SKScene & HasListener
     let solarSystemScene: SKScene & HasPublisher
@@ -25,7 +32,7 @@ class Simulation: ObservableObject {
     //  MARK: - Lifecycle Methods
     
     init(phenomenon: PhenomenonType) {
-        self.phenomenon = phenomenon
+        self.phenomenonType = phenomenon
         
         let size = UIScreen.main.bounds.size.landscape()
         switch phenomenon {
@@ -50,8 +57,16 @@ class Simulation: ObservableObject {
         earthViewScene.notified(of: value)
     }
     
-    func notifyViewModel(with value: String) {
+    func notifyViewModelDate(with value: String) {
         status = value
+    }
+    
+    func notifyViewModelPhenomenonName(with value: String) {
+        phenomenonName = value
+    }
+    
+    func notifyViewModelObjectives(with index: Int) {
+        phenomena[index].isDone = true
     }
 }
 
