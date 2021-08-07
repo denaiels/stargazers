@@ -11,6 +11,7 @@ import SpriteKit
 class MeteorShower2DScene: SKScene, HasListener {
     
     let bounds: CGRect
+    var runOnce = false
     
     //  MARK: - Date Ranges
     
@@ -49,10 +50,13 @@ class MeteorShower2DScene: SKScene, HasListener {
     }
     
     override func didMove(to view: SKView) {
-        makeBackground()
-        makePerseids()
-        makeGeminids()
-        makeLyrids()
+        if runOnce == false {
+            makeBackground()
+            makePerseids()
+            makeGeminids()
+            makeLyrids()
+            runOnce = true
+        }
     }
     
     //  MARK: - Node Creation Methods
@@ -64,7 +68,7 @@ class MeteorShower2DScene: SKScene, HasListener {
         backgroundNode.zPosition = 0
         addChild(backgroundNode)
     }
-        
+    
     func makeVideoPlayer(named filename: String) -> AVPlayer {
         let player = AVPlayer(url: Bundle.main.url(forResource: filename, withExtension: "mp4")!)
         player.actionAtItemEnd = .none
@@ -154,7 +158,7 @@ extension MeteorShower2DScene {
         let date = getDate(from: angle)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MMMM"
-                
+        
         return dateFormatter.string(from: date)
     }
 }

@@ -20,6 +20,7 @@ struct InfoCardsView: View {
             }
             
         }
+        .statusBar(hidden: true)
         .navigationBarHidden(true)
         //        .navigationBarBackButtonHidden(true)
     }

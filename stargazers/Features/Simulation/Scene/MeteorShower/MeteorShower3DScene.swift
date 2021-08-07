@@ -10,6 +10,7 @@ import SpriteKit
 class MeteorShower3DScene: SKScene, HasPublisher {
     
     let bounds: CGRect
+    var runOnce = false
     let sunRadius: CGFloat // Reference length for all other measurements
     
     weak var simulation: Simulation?
@@ -34,7 +35,7 @@ class MeteorShower3DScene: SKScene, HasPublisher {
     var geminidsNode: SKSpriteNode!
     
     var touchedNode: SKNode?
-
+    
     //  MARK: - Lifecycle Methods
     
     override init(size: CGSize) {
@@ -48,18 +49,21 @@ class MeteorShower3DScene: SKScene, HasPublisher {
     }
     
     override func didMove(to view: SKView) {
-        makeBackground()
-        makeSun()
-        makeEarthPath()
-
-        makeEarth()
-        extraSetup()
-        
-        makeLyrids()
-        makePerseids()
-        makeGeminids()
-        
-        setAsteroidBelt(at: -.pi)
+        if runOnce == false {
+            makeBackground()
+            makeSun()
+            makeEarthPath()
+            
+            makeEarth()
+            extraSetup()
+            
+            makeLyrids()
+            makePerseids()
+            makeGeminids()
+            
+            setAsteroidBelt(at: -.pi)
+            runOnce = true
+        }
     }
     
     //  MARK: - Node Creation Methods
@@ -82,7 +86,7 @@ class MeteorShower3DScene: SKScene, HasPublisher {
         sunNode.fillTexture = SKTexture(imageNamed: "Sun")
         addChild(sunNode)
     }
-        
+    
     func makeEarthPath() {
         let rect = CGSize(width: sunNode.frame.width * 6, height: sunNode.frame.height * 1.4)
         pathNode = SKShapeNode(ellipseOf: rect)
@@ -95,7 +99,7 @@ class MeteorShower3DScene: SKScene, HasPublisher {
         
         pathNode.name = "EarthPath"
         pathNode.strokeColor = .red
-//        addChild(pathNode)
+        //        addChild(pathNode)
     }
     
     func makeEarth() {
@@ -245,7 +249,7 @@ extension MeteorShower3DScene {
         let date = getDate(from: angle)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MMMM"
-                
+        
         return dateFormatter.string(from: date)
     }
     
@@ -280,7 +284,7 @@ extension Date {
     init(_ dateString: String) {
         let dateStringFormatter = DateFormatter()
         dateStringFormatter.dateFormat = "yyyy-MM-dd"
-//        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale
+        //        dateStringFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale
         let date = dateStringFormatter.date(from: dateString)!
         self.init(timeInterval: 0, since: date)
     }
