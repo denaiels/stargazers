@@ -58,6 +58,9 @@ struct HUDView: View {
                 
             }
         }
+        .statusBar(hidden: true)
+        .edgesIgnoringSafeArea(.vertical)
+        .navigationBarHidden(true)
     }
 }
 
