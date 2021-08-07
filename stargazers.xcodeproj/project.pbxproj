@@ -28,7 +28,6 @@
 		A3D641FF26BD32B300460379 /* Lyrids.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A3D641FD26BD32B300460379 /* Lyrids.mp4 */; };
 		A3E809DA26B8219200E31F7F /* MeteorShower2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809D926B8219200E31F7F /* MeteorShower2DScene.swift */; };
 		A3E809DC26B821A000E31F7F /* MeteorShower3DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809DB26B821A000E31F7F /* MeteorShower3DScene.swift */; };
-		A3E809DF26B8332F00E31F7F /* CGSize+Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +54,6 @@
 		A3D641FD26BD32B300460379 /* Lyrids.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lyrids.mp4; sourceTree = "<group>"; };
 		A3E809D926B8219200E31F7F /* MeteorShower2DScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorShower2DScene.swift; sourceTree = "<group>"; };
 		A3E809DB26B821A000E31F7F /* MeteorShower3DScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorShower3DScene.swift; sourceTree = "<group>"; };
-		A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Landscape.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,6 @@
 				A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */,
 				A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */,
 				707A242E26B7F5A6000114B6 /* ViewLandscape.swift */,
-				A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -296,7 +293,6 @@
 				A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */,
 				A3295F3026B809E0006A1C92 /* Eclipse2DScene.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
-				A3E809DF26B8332F00E31F7F /* CGSize+Landscape.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
 				A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */,
 				A3E809DC26B821A000E31F7F /* MeteorShower3DScene.swift in Sources */,
