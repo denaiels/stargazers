@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A242E26B7F5A6000114B6 /* ViewLandscape.swift */; };
 		A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */; };
-		A31EABA026A963F600BB04B7 /* modelData.json in Resources */ = {isa = PBXBuildFile; fileRef = A31EAB9F26A963F600BB04B7 /* modelData.json */; };
 		A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA126A9643600BB04B7 /* SimulationView.swift */; };
 		A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */; };
 		A3295F2226B7F1CF006A1C92 /* InfoCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */; };
@@ -23,18 +22,18 @@
 		A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84326A95F3A00452CF6 /* ContentView.swift */; };
 		A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84526A95F3B00452CF6 /* Assets.xcassets */; };
 		A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */; };
+		A39B490026BEC2A7008D240C /* modelData.json in Resources */ = {isa = PBXBuildFile; fileRef = A39B48FF26BEC2A7008D240C /* modelData.json */; };
 		A3D641FB26BD2E2300460379 /* Perseids.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A3D641FA26BD2E2300460379 /* Perseids.mp4 */; };
 		A3D641FE26BD32B300460379 /* Geminids.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A3D641FC26BD32B300460379 /* Geminids.mp4 */; };
 		A3D641FF26BD32B300460379 /* Lyrids.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A3D641FD26BD32B300460379 /* Lyrids.mp4 */; };
 		A3E809DA26B8219200E31F7F /* MeteorShower2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809D926B8219200E31F7F /* MeteorShower2DScene.swift */; };
 		A3E809DC26B821A000E31F7F /* MeteorShower3DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809DB26B821A000E31F7F /* MeteorShower3DScene.swift */; };
-		A3E809DF26B8332F00E31F7F /* CGSize+Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */; };
+		A3E809DF26B8332F00E31F7F /* CGSizeLandscape2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E809DE26B8332F00E31F7F /* CGSizeLandscape2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		707A242E26B7F5A6000114B6 /* ViewLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLandscape.swift; sourceTree = "<group>"; };
 		A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
-		A31EAB9F26A963F600BB04B7 /* modelData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = modelData.json; sourceTree = "<group>"; };
 		A31EABA126A9643600BB04B7 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardsView.swift; sourceTree = "<group>"; };
@@ -50,12 +49,13 @@
 		A343F84526A95F3B00452CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A343F84A26A95F3B00452CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39B48FF26BEC2A7008D240C /* modelData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = modelData.json; sourceTree = "<group>"; };
 		A3D641FA26BD2E2300460379 /* Perseids.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Perseids.mp4; sourceTree = "<group>"; };
 		A3D641FC26BD32B300460379 /* Geminids.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Geminids.mp4; sourceTree = "<group>"; };
 		A3D641FD26BD32B300460379 /* Lyrids.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lyrids.mp4; sourceTree = "<group>"; };
 		A3E809D926B8219200E31F7F /* MeteorShower2DScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorShower2DScene.swift; sourceTree = "<group>"; };
 		A3E809DB26B821A000E31F7F /* MeteorShower3DScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorShower3DScene.swift; sourceTree = "<group>"; };
-		A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Landscape.swift"; sourceTree = "<group>"; };
+		A3E809DE26B8332F00E31F7F /* CGSizeLandscape2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeLandscape2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		A31EAB9926A9627A00BB04B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A31EAB9F26A963F600BB04B7 /* modelData.json */,
+				A39B48FF26BEC2A7008D240C /* modelData.json */,
 				A3D641F326BD173200460379 /* Videos */,
 			);
 			path = Resources;
@@ -84,7 +84,7 @@
 				A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */,
 				A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */,
 				707A242E26B7F5A6000114B6 /* ViewLandscape.swift */,
-				A3E809DE26B8332F00E31F7F /* CGSize+Landscape.swift */,
+				A3E809DE26B8332F00E31F7F /* CGSizeLandscape2.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -271,9 +271,9 @@
 				A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */,
 				A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */,
 				A3D641FF26BD32B300460379 /* Lyrids.mp4 in Resources */,
-				A31EABA026A963F600BB04B7 /* modelData.json in Resources */,
 				A3D641FB26BD2E2300460379 /* Perseids.mp4 in Resources */,
 				A3D641FE26BD32B300460379 /* Geminids.mp4 in Resources */,
+				A39B490026BEC2A7008D240C /* modelData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +296,7 @@
 				A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */,
 				A3295F3026B809E0006A1C92 /* Eclipse2DScene.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
-				A3E809DF26B8332F00E31F7F /* CGSize+Landscape.swift in Sources */,
+				A3E809DF26B8332F00E31F7F /* CGSizeLandscape2.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
 				A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */,
 				A3E809DC26B821A000E31F7F /* MeteorShower3DScene.swift in Sources */,
