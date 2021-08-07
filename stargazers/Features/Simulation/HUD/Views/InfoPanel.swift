@@ -1,20 +1,21 @@
 //
-//  HUDView.swift
+//  InfoPanel.swift
 //  stargazers
 //
-//  Created by Fabio Sim on 02/08/21.
+//  Created by Daniel Santoso on 05/08/21.
 //
 
 import SwiftUI
 
-struct HUDView: View {
+struct InfoPanel: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct HUDView_Previews: PreviewProvider {
+struct InfoPanel_Previews: PreviewProvider {
     static var previews: some View {
-        HUDView()
+        InfoPanel()
+            .landscape()
     }
 }
