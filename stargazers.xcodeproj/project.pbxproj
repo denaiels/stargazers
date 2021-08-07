@@ -16,16 +16,26 @@
 		707A243326B7FFA8000114B6 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A243226B7FFA8000114B6 /* Structure.swift */; };
 		708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708BCCE126BA93B900B384A1 /* PlaySound.swift */; };
 		708BCCE426BA9D3C00B384A1 /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 708BCCE326BA9D3C00B384A1 /* A.mp3 */; };
-		70CFD14726B95B0C0078E7A6 /* CGSizeFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */; };
 		A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */; };
 		A31EABA226A9643600BB04B7 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA126A9643600BB04B7 /* SimulationView.swift */; };
 		A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */; };
-		A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2726B7F22E006A1C92 /* HUDView.swift */; };
 		A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3295F2926B7F26B006A1C92 /* ModelData.swift */; };
 		A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84126A95F3A00452CF6 /* stargazersApp.swift */; };
 		A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343F84326A95F3A00452CF6 /* ContentView.swift */; };
 		A343F84626A95F3B00452CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84526A95F3B00452CF6 /* Assets.xcassets */; };
 		A343F84926A95F3B00452CF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */; };
+		A3B5711526BEBB4D00F10B57 /* ModelDataHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5710A26BEBB4D00F10B57 /* ModelDataHUD.swift */; };
+		A3B5711726BEBB4D00F10B57 /* CompletedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5710E26BEBB4D00F10B57 /* CompletedStatus.swift */; };
+		A3B5711826BEBB4D00F10B57 /* ObjectiveRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5710F26BEBB4D00F10B57 /* ObjectiveRow.swift */; };
+		A3B5711926BEBB4D00F10B57 /* ObjectivesHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711026BEBB4D00F10B57 /* ObjectivesHUD.swift */; };
+		A3B5711A26BEBB4D00F10B57 /* ViewFromEarthHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711126BEBB4D00F10B57 /* ViewFromEarthHUD.swift */; };
+		A3B5711B26BEBB4D00F10B57 /* TopBottomHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711226BEBB4D00F10B57 /* TopBottomHUD.swift */; };
+		A3B5711C26BEBB4D00F10B57 /* StatusHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711326BEBB4D00F10B57 /* StatusHUD.swift */; };
+		A3B5711D26BEBB4D00F10B57 /* InfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711426BEBB4D00F10B57 /* InfoPanel.swift */; };
+		A3B5712026BEBB7600F10B57 /* CGSize+Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711E26BEBB7600F10B57 /* CGSize+Landscape.swift */; };
+		A3B5712126BEBB7600F10B57 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5711F26BEBB7600F10B57 /* AppColors.swift */; };
+		A3B5712326BEBBAA00F10B57 /* Phenomenon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5712226BEBBAA00F10B57 /* Phenomenon.swift */; };
+		A3B5712526BEBC0C00F10B57 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B5712426BEBC0C00F10B57 /* HUDView.swift */; };
 		A3D6420926BD4AC000460379 /* DetailCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420326BD4ABF00460379 /* DetailCards.swift */; };
 		A3D6420B26BD4AC000460379 /* MissionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420526BD4ABF00460379 /* MissionCard.swift */; };
 		A3D6420C26BD4AC000460379 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D6420726BD4ABF00460379 /* DummyData.swift */; };
@@ -44,7 +54,6 @@
 		707A243226B7FFA8000114B6 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
 		708BCCE126BA93B900B384A1 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		708BCCE326BA9D3C00B384A1 /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A.mp3; sourceTree = "<group>"; };
-		70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeFrame.swift; sourceTree = "<group>"; };
 		A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		A31EABA126A9643600BB04B7 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -57,6 +66,18 @@
 		A343F84526A95F3B00452CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A343F84826A95F3B00452CF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A343F84A26A95F3B00452CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B5710A26BEBB4D00F10B57 /* ModelDataHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataHUD.swift; sourceTree = "<group>"; };
+		A3B5710E26BEBB4D00F10B57 /* CompletedStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedStatus.swift; sourceTree = "<group>"; };
+		A3B5710F26BEBB4D00F10B57 /* ObjectiveRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectiveRow.swift; sourceTree = "<group>"; };
+		A3B5711026BEBB4D00F10B57 /* ObjectivesHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectivesHUD.swift; sourceTree = "<group>"; };
+		A3B5711126BEBB4D00F10B57 /* ViewFromEarthHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFromEarthHUD.swift; sourceTree = "<group>"; };
+		A3B5711226BEBB4D00F10B57 /* TopBottomHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBottomHUD.swift; sourceTree = "<group>"; };
+		A3B5711326BEBB4D00F10B57 /* StatusHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusHUD.swift; sourceTree = "<group>"; };
+		A3B5711426BEBB4D00F10B57 /* InfoPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPanel.swift; sourceTree = "<group>"; };
+		A3B5711E26BEBB7600F10B57 /* CGSize+Landscape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Landscape.swift"; sourceTree = "<group>"; };
+		A3B5711F26BEBB7600F10B57 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		A3B5712226BEBBAA00F10B57 /* Phenomenon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phenomenon.swift; sourceTree = "<group>"; };
+		A3B5712426BEBC0C00F10B57 /* HUDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
 		A3D6420326BD4ABF00460379 /* DetailCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCards.swift; sourceTree = "<group>"; };
 		A3D6420526BD4ABF00460379 /* MissionCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionCard.swift; sourceTree = "<group>"; };
 		A3D6420726BD4ABF00460379 /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
@@ -123,10 +144,11 @@
 		A31EAB9A26A9628900BB04B7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A3B5711F26BEBB7600F10B57 /* AppColors.swift */,
+				A3B5711E26BEBB7600F10B57 /* CGSize+Landscape.swift */,
 				A31EAB9D26A962E800BB04B7 /* JSONLoader.swift */,
 				A31EABA326A9646A00BB04B7 /* CoreDataManager.swift */,
 				707A242E26B7F5A6000114B6 /* ViewLandscape.swift */,
-				70CFD14626B95B0C0078E7A6 /* CGSizeFrame.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -174,7 +196,8 @@
 		A3295F2526B7F1EA006A1C92 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
-				A3295F2726B7F22E006A1C92 /* HUDView.swift */,
+				A3B5710926BEBB4D00F10B57 /* Model */,
+				A3B5710B26BEBB4D00F10B57 /* Views */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -228,10 +251,43 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A3B5710926BEBB4D00F10B57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5710A26BEBB4D00F10B57 /* ModelDataHUD.swift */,
+				A3B5712226BEBBAA00F10B57 /* Phenomenon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3B5710B26BEBB4D00F10B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5712426BEBC0C00F10B57 /* HUDView.swift */,
+				A3B5710D26BEBB4D00F10B57 /* Objectives */,
+				A3B5711126BEBB4D00F10B57 /* ViewFromEarthHUD.swift */,
+				A3B5711226BEBB4D00F10B57 /* TopBottomHUD.swift */,
+				A3B5711326BEBB4D00F10B57 /* StatusHUD.swift */,
+				A3B5711426BEBB4D00F10B57 /* InfoPanel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3B5710D26BEBB4D00F10B57 /* Objectives */ = {
+			isa = PBXGroup;
+			children = (
+				A3B5710E26BEBB4D00F10B57 /* CompletedStatus.swift */,
+				A3B5710F26BEBB4D00F10B57 /* ObjectiveRow.swift */,
+				A3B5711026BEBB4D00F10B57 /* ObjectivesHUD.swift */,
+			);
+			path = Objectives;
+			sourceTree = "<group>";
+		};
 		A3D6420126BD4AA800460379 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				A3295F2126B7F1CF006A1C92 /* InfoCardsView.swift */,
+				A3295F2726B7F22E006A1C92 /* HUDView.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -327,21 +383,31 @@
 				707A242F26B7F5A6000114B6 /* ViewLandscape.swift in Sources */,
 				A343F84426A95F3A00452CF6 /* ContentView.swift in Sources */,
 				701275F026BB735800CDF122 /* Dashboard.swift in Sources */,
+				A3B5711726BEBB4D00F10B57 /* CompletedStatus.swift in Sources */,
+				A3B5712526BEBC0C00F10B57 /* HUDView.swift in Sources */,
+				A3B5711826BEBB4D00F10B57 /* ObjectiveRow.swift in Sources */,
+				A3B5711526BEBB4D00F10B57 /* ModelDataHUD.swift in Sources */,
 				A3D6420C26BD4AC000460379 /* DummyData.swift in Sources */,
 				A343F84226A95F3A00452CF6 /* stargazersApp.swift in Sources */,
+				A3B5711D26BEBB4D00F10B57 /* InfoPanel.swift in Sources */,
 				704F893D26BBE932007A232B /* DummyView.swift in Sources */,
 				A3D6421126BD4B8900460379 /* InfoCardsView.swift in Sources */,
-				70CFD14726B95B0C0078E7A6 /* CGSizeFrame.swift in Sources */,
+				A3B5712026BEBB7600F10B57 /* CGSize+Landscape.swift in Sources */,
 				A3295F2A26B7F26B006A1C92 /* ModelData.swift in Sources */,
 				A3D6420D26BD4AC000460379 /* Tappable.swift in Sources */,
+				A3B5712126BEBB7600F10B57 /* AppColors.swift in Sources */,
 				708BCCE226BA93B900B384A1 /* PlaySound.swift in Sources */,
-				A3295F2826B7F22E006A1C92 /* HUDView.swift in Sources */,
+				A3B5711B26BEBB4D00F10B57 /* TopBottomHUD.swift in Sources */,
 				A3D6420F26BD4ACD00460379 /* PageTabView.swift in Sources */,
+				A3B5711A26BEBB4D00F10B57 /* ViewFromEarthHUD.swift in Sources */,
 				A31EAB9E26A962E800BB04B7 /* JSONLoader.swift in Sources */,
 				704F893826BBE3BC007A232B /* ButtonChevron.swift in Sources */,
 				A3D6420B26BD4AC000460379 /* MissionCard.swift in Sources */,
 				A3D6420926BD4AC000460379 /* DetailCards.swift in Sources */,
+				A3B5711C26BEBB4D00F10B57 /* StatusHUD.swift in Sources */,
+				A3B5712326BEBBAA00F10B57 /* Phenomenon.swift in Sources */,
 				707A243326B7FFA8000114B6 /* Structure.swift in Sources */,
+				A3B5711926BEBB4D00F10B57 /* ObjectivesHUD.swift in Sources */,
 				704F893B26BBE6A8007A232B /* DataOnly.swift in Sources */,
 				704F893426BBE040007A232B /* HUD.swift in Sources */,
 				A31EABA426A9646A00BB04B7 /* CoreDataManager.swift in Sources */,
