@@ -11,7 +11,10 @@ struct ContentView: View {
     @EnvironmentObject var modelData: ModelData
     
     var body: some View {
-        SimulationView(simulation: modelData.simulations[1])
+        NavigationView {
+            Dashboard()
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
