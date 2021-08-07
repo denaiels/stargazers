@@ -10,28 +10,27 @@ import SwiftUI
 struct PageTabView: View {
     @Binding var selection: Int
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    let adaptiveTopIndicator = UIScreen.main.bounds.size.landscape().width * 0.014
+    let adaptiveLeadingIndicator = UIScreen.main.bounds.size.landscape().width * 0.050
+    let adaptiveOffset = UIScreen.main.bounds.size.landscape().width * 0.058
+
     var body: some View {
             VStack {
                 HStack {
                     indicatorPage(selection: $selection)
-                        .padding(.top, 20)
-                        .padding(.leading, 50)
+                        .padding(.top, adaptiveTopIndicator)
+                        .padding(.leading, adaptiveLeadingIndicator)
                     Spacer()
                 }
                 
                 HStack {
                     Spacer()
-                    //                    .offset(x: -250, y: -70)
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
                     }){
                         Image(systemName: "xmark").foregroundColor(.yellow).font(.system(size: 50))
-                    }
+                    }.offset(x: -adaptiveOffset, y: adaptiveOffset)
                 }
-                .padding()
-                .padding(.bottom, 100)
-                
-                
                 ZStack(){
                     if(selection == 4){
                         MissionCard()
@@ -42,8 +41,6 @@ struct PageTabView: View {
                     ButtonChevronCard(selection: $selection)
                 }
             }
-        
-        //        .frame(width: 800, height: 600)
     }
 }
 
@@ -63,10 +60,11 @@ struct indicatorPage : View {
 }
 
 struct ButtonChevronCard : View {
+    let spacingAdaptive = UIScreen.main.bounds.size.landscape().width * 0.750
     @Binding var selection: Int
     var body: some View{
         ZStack(){
-            HStack(spacing:850){
+            HStack(spacing:spacingAdaptive){
                 Button(action:{(selection == 0) ? selection = 0 : (selection -= 1)}){
                     Image(systemName: "chevron.left").foregroundColor(Color(#colorLiteral(red: 0.9765589833, green: 0.5821846128, blue: 0, alpha: 1))).frame(width: 100, height: 100).font(.system(size: 100))
                 }

@@ -9,20 +9,23 @@ import SwiftUI
 
 struct DetailCards: View {
     @State var showOverlay = false
+    let adaptiveWidth = UIScreen.main.bounds.size.landscape().width * 0.617
     let index: Int
     var body: some View {
         VStack(alignment: .leading,spacing: 20) {
+            Spacer()
             HStack{
                 Text("Ketuk kata yang").italic() + Text(" disorot ").foregroundColor(.yellow).italic() + Text("untuk membuka penjelasan").italic()
-            }.frame(width: 800,alignment: .leading)
-            Image(inserted[index].image).resizable().frame(width: 800,height: 406).aspectRatio(contentMode: .fill)
+            }.frame(width: adaptiveWidth,alignment: .leading)
+            Image(inserted[index].image).resizable().aspectRatio(contentMode: .fit)
 //            HStack() {
 //                ForEach(inserted[index].text.split(separator: "*"), id: \.self) { part in
 //                    self.generateBlock(for: part)
 //                }
 //            }
-            Text(inserted[index].text)
-        }.frame(width:800,alignment: .leading).foregroundColor(.white)
+            Text(inserted[index].text).frame(width:adaptiveWidth,alignment: .leading)
+            Spacer()
+        }.frame(width:adaptiveWidth,alignment: .leading).foregroundColor(.white)
     }
     
     private func generateBlock(for str: Substring) -> some View {
