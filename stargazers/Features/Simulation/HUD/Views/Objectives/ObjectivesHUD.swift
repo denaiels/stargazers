@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ObjectivesHUD: View {
-    @EnvironmentObject var modelData: ModelDataHUD
+    @ObservedObject var simulation: Simulation
     
     // MARK: - Dynamic Sizes
     let imageWidth = UIScreen.main.bounds.size.landscape().width * 0.332 // 454
@@ -24,8 +24,9 @@ struct ObjectivesHUD: View {
                 .frame(width: imageWidth)
             
             VStack(alignment: .trailing, spacing: objectivesStackSpacing) {
-                ForEach(modelData.phenomena.dropFirst()) { phenomenon in
-                    ObjectiveRow(phenomenon: phenomenon)
+                // Workaround for passing Bindings into ForEach: (iOS <15)
+                ForEach(simulation.phenomena.indices) { idx in
+                    ObjectiveRow(phenomenon: $simulation.phenomena[idx])
                 }
             }
             .padding([.top, .trailing], rowPadding)
@@ -35,18 +36,18 @@ struct ObjectivesHUD: View {
 }
 
 struct ObjectivesHUD_Previews: PreviewProvider {
-    static var modelData = ModelDataHUD()
+//    static var modelData = ModelData()
     
     static var previews: some View {
         Group {
-            ObjectivesHUD()
+            ObjectivesHUD(simulation: Simulation(phenomenon: .meteorShower))
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
                 .landscape()
-                .environmentObject(modelData)
-            ObjectivesHUD()
-                .previewDevice("iPad Air (4th generation)")
-                .landscape()
-                .environmentObject(modelData)
+//                .environmentObject(modelData)
+//            ObjectivesHUD()
+//                .previewDevice("iPad Air (4th generation)")
+//                .landscape()
+//                .environmentObject(modelData)
         }
     }
 }

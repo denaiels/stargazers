@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MissionCard: View {
+    @EnvironmentObject var modelData: ModelData
+    
     let adaptiveWidth = UIScreen.main.bounds.size.landscape().width * 0.617
     let adaptiveForButton = UIScreen.main.bounds.size.landscape().width * 0.191
     
@@ -19,7 +21,7 @@ struct MissionCard: View {
                 Text("• Simulasikan Hujan Meteor Lyrids \n• Simulasikan Hujan Meteor Perseid \n• Simulasikan Hujan Meteor Geminid").frame(width: adaptiveWidth,alignment: .leading).font(.system(size: 32, weight: .medium))
             }
             
-            NavigationLink(destination: HUDView(id: 0)){
+            NavigationLink(destination: HUDView(id: 0, simulation: modelData.simulations[1])){
                 Image("StartButton")
                     .resizable()
                     .frame(width:adaptiveForButton,height:61)
@@ -39,5 +41,6 @@ struct MissionCard_Previews: PreviewProvider {
             MissionCard().landscape()
             MissionCard().previewDevice("iPad Pro (12.9-inch) (4th generation)").landscape()
         }
+        .environmentObject(ModelData())
     }
 }

@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ObjectiveRow: View {
-    @EnvironmentObject var modelData: ModelDataHUD
-    var phenomenon: Phenomenon
-    var phenomenaIndex: Int {
-        modelData.phenomena.firstIndex(where: {
-            $0.id == phenomenon.id
-        })!
-    }
+    @Binding var phenomenon: Phenomenon
+//    var phenomenaIndex: Int {
+//        modelData.phenomena.firstIndex(where: {
+//            $0.id == phenomenon.id
+//        })!
+//    }
     
     // MARK: - Dynamic Sizes
     let imageWidth = UIScreen.main.bounds.size.landscape().width * 0.332 // 454
@@ -32,7 +31,8 @@ struct ObjectiveRow: View {
                 .foregroundColor(.white)
                 .frame(minWidth: textMinWidth, alignment: .leading)
             
-            CompletedStatus(isCompleted: $modelData.phenomena[phenomenaIndex].isDone)
+//            CompletedStatus(isCompleted: $modelData.phenomena[phenomenaIndex].isDone)
+            CompletedStatus(isCompleted: $phenomenon.isDone)
             
         }
         .frame(
@@ -43,20 +43,20 @@ struct ObjectiveRow: View {
 }
 
 struct ObjectiveRow_Previews: PreviewProvider {
-    static var modelData = ModelDataHUD()
+    static var modelData = ModelData()
     
     static var previews: some View {
         Group {
-            ObjectiveRow(phenomenon: modelData.phenomena[1])
+            ObjectiveRow(phenomenon: .constant(Phenomenon(id: 1, name: "Lyrids", isDone: false)))
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
                 .landscape()
                 .background(Color.black)
                 .environmentObject(modelData)
-            ObjectiveRow(phenomenon: modelData.phenomena[1])
-                .previewDevice("iPad Air (4th generation)")
-                .landscape()
-                .background(Color.black)
-                .environmentObject(modelData)
+//            ObjectiveRow(phenomenon: modelData.phenomena[1])
+//                .previewDevice("iPad Air (4th generation)")
+//                .landscape()
+//                .background(Color.black)
+//                .environmentObject(modelData)
         }
     }
 }

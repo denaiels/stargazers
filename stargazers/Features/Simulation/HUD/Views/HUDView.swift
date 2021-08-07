@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct HUDView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @EnvironmentObject var modelData: ModelDataHUD
+    
+    @EnvironmentObject var modelData: ModelData
     
     var id: Int
     var phenomenon: Phenomenon {
@@ -17,6 +19,8 @@ struct HUDView: View {
             $0.id == id
         })!
     }
+    
+    @ObservedObject var simulation: Simulation
     
     // MARK: - Dynamic Sizes
     let backBtnSize = UIScreen.main.bounds.size.landscape().width * 0.0585 // 80
@@ -27,6 +31,8 @@ struct HUDView: View {
     // MARK: - Views
     var body: some View {
         ZStack(alignment: .center) {
+            SpriteView(scene: simulation.solarSystemScene)
+            
             TopBottomHUD()
             
             VStack {
@@ -43,17 +49,17 @@ struct HUDView: View {
                     
                     Spacer()
                     
-                    ViewFromEarthHUD()
+                    ViewFromEarthHUD(simulation: simulation)
                 }
                 
                 Spacer()
                 
                 HStack(alignment: .bottom) {
-                    StatusHUD(phenomenon: phenomenon)
+                    StatusHUD(simulation: simulation)
                     
                     Spacer()
                     
-                    ObjectivesHUD()
+                    ObjectivesHUD(simulation: simulation)
                 }
                 
             }
@@ -65,22 +71,22 @@ struct HUDView: View {
 }
 
 struct HUDView_Previews: PreviewProvider {
-    static var modelData = ModelDataHUD()
+    static var modelData = ModelData()
     
     static var previews: some View {
         Group {
-            HUDView(id: 1)
+            HUDView(id: 0, simulation: Simulation(phenomenon: .solarEclipse))
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
                 .landscape()
-            HUDView(id: 1)
-                .previewDevice("iPad Air (4th generation)")
-                .landscape()
-            HUDView(id: 2)
-                .previewDevice("iPad Pro (11-inch) (3rd generation)")
-                .landscape()
-            HUDView(id: 0)
-                .previewDevice("iPad Pro (11-inch) (3rd generation)")
-                .landscape()
+//            HUDView(id: 1)
+//                .previewDevice("iPad Air (4th generation)")
+//                .landscape()
+//            HUDView(id: 2)
+//                .previewDevice("iPad Pro (11-inch) (3rd generation)")
+//                .landscape()
+//            HUDView(id: 0)
+//                .previewDevice("iPad Pro (11-inch) (3rd generation)")
+//                .landscape()
         }
         .environmentObject(modelData)
     }

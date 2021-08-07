@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var modelData: ModelData
+    
     var body: some View {
         NavigationView {
             Dashboard()
@@ -19,6 +21,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .landscape()
             .environmentObject(ModelData())
     }
 }

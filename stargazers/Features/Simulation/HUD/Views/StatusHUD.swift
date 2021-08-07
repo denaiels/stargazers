@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StatusHUD: View {
-    var phenomenon: Phenomenon
+    @ObservedObject var simulation: Simulation
     
     // MARK: - Dynamic Sizes
     let imageWidth = UIScreen.main.bounds.size.landscape().width * 0.332 // 454
@@ -25,12 +25,12 @@ struct StatusHUD: View {
                 .frame(width: imageWidth)
             
             VStack(alignment: .leading) {
-                Text(phenomenon.name)
+                Text(simulation.phenomenonName)
                     .font(.system(size: statusSize, design: .monospaced))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                  
-                Text("15 Desember 2021")
+                Text(simulation.status)
                     .font(.system(size: dateSize, design: .monospaced))
                     .fontWeight(.light)
                     .foregroundColor(.white)
@@ -42,16 +42,15 @@ struct StatusHUD: View {
 }
 
 struct StatusHUD_Previews: PreviewProvider {
-    static var phenomena = ModelDataHUD().phenomena
     
     static var previews: some View {
         Group {
-            StatusHUD(phenomenon: phenomena[1])
+            StatusHUD(simulation: Simulation(phenomenon: .meteorShower))
                 .previewDevice("iPad Pro (12.9-inch) (5th generation)")
                 .landscape()
-            StatusHUD(phenomenon: phenomena[1])
-                .previewDevice("iPad Air (4th generation)")
-                .landscape()
+//            StatusHUD(phenomenon: phenomena[1])
+//                .previewDevice("iPad Air (4th generation)")
+//                .landscape()
         }
     }
 }
