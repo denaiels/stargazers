@@ -15,7 +15,7 @@ struct DetailCards: View {
         VStack(alignment: .leading,spacing: 20) {
             Spacer()
             HStack{
-                Text("Ketuk kata yang").italic() + Text(" disorot ").foregroundColor(.yellow).italic() + Text("untuk membuka penjelasan").italic()
+                Text("Ketuk kata yang").italic().font(.system(size: 16, design: .monospaced)) + Text(" disorot ").foregroundColor(.yellow).italic().font(.system(size: 16, design: .monospaced)) + Text("untuk membuka penjelasan").italic().font(.system(size: 16, design: .monospaced))
             }.frame(width: adaptiveWidth,alignment: .leading)
             Image(inserted[index].image).resizable().aspectRatio(contentMode: .fit)
 //            HStack() {
@@ -23,7 +23,7 @@ struct DetailCards: View {
 //                    self.generateBlock(for: part)
 //                }
 //            }
-            Text(inserted[index].text).frame(width:adaptiveWidth,alignment: .leading)
+            Text(inserted[index].text).frame(width:adaptiveWidth,alignment: .leading).font(.system(size: 16, design: .monospaced))
             Spacer()
         }.frame(width:adaptiveWidth,alignment: .leading).foregroundColor(.white)
     }

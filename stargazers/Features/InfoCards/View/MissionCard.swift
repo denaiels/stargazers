@@ -17,8 +17,8 @@ struct MissionCard: View {
         VStack(spacing: 10) {
             Spacer()
             VStack{
-                Text("Misi Anda adalah:").frame(width: 800,alignment: .leading).font(.system(size: 32))
-                Text("• Simulasikan Hujan Meteor Lyrids \n• Simulasikan Hujan Meteor Perseid \n• Simulasikan Hujan Meteor Geminid").frame(width: adaptiveWidth,alignment: .leading).font(.system(size: 32, weight: .medium))
+                Text("Misi Anda adalah:").frame(width: 800,alignment: .leading).font(.system(size: 32,design: .monospaced))
+                Text("• Simulasikan Hujan Meteor Lyrids \n• Simulasikan Hujan Meteor Perseid \n• Simulasikan Hujan Meteor Geminid").frame(width: adaptiveWidth,alignment: .leading).font(.system(size: 32, weight: .medium,design: .monospaced))
             }
             
             NavigationLink(destination: HUDView(id: 0, simulation: modelData.simulations[1])){
@@ -27,7 +27,8 @@ struct MissionCard: View {
                     .frame(width:adaptiveForButton,height:61)
                     .overlay(Text("Mulai Misi")
                                 .foregroundColor(.white)
-                                .font(.system(size: 32))
+                                .font(.system(size: 24,design: .monospaced))
+                                .fontWeight(.light)
                     )
             }.padding(.top,80)
             Spacer()
@@ -39,7 +40,6 @@ struct MissionCard_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MissionCard().landscape()
-            MissionCard().previewDevice("iPad Pro (12.9-inch) (4th generation)").landscape()
         }
         .environmentObject(ModelData())
     }
