@@ -12,9 +12,9 @@ struct InfoCardsView: View {
     
     @State var selection = 0
     var body: some View {
-        ZStack(alignment: .top){
+        ZStack(alignment: .center){
             Color(#colorLiteral(red: 0.00527537521, green: 0.003872103523, blue: 0.1063141897, alpha: 1)).ignoresSafeArea()
-            HUD()
+            TopBottomHUD()
             VStack{
                 PageTabView(selection: $selection)
             }
